@@ -130,11 +130,18 @@ Akses di:
 
 ## 📜 Lisensi
 
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+Proyek ini dilisensikan di bawah **MIT License** — artinya Anda bebas menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, dan/atau menjual salinan kode ini, selama atribusi kepada **PT. Mokko Otomasi Indonesia** tetap dicantumkan.
 
-```
+Detail lengkap dapat dibaca pada file [LICENSE](LICENSE).
 
 ---
 
-Mau saya buatkan juga **badge GitHub (build, license, last commit, dsb.)** biar lebih profesional di atas `README.md` ini?
-```
+### Ringkasan MIT License
+- ✔️ Boleh digunakan secara pribadi maupun komersial  
+- ✔️ Boleh dimodifikasi dan didistribusikan  
+- ✔️ Boleh digunakan dalam proyek open source maupun closed source  
+- ❌ Tidak ada garansi — penggunaan kode sepenuhnya menjadi tanggung jawab pengguna  
+- ❌ Harus mencantumkan copyright dan izin lisensi  
+
+
+
