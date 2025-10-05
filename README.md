@@ -1,5 +1,10 @@
+Bagus 👍 Saya sudah lihat struktur dan konten dari file HTML yang Anda kirim (`index.html`, `product.html`, `project.html`, `service.html`). Dari situ kita bisa menyusun dokumentasi `README.md` yang spesifik sesuai dengan project website **PT. Mokko Otomasi Indonesia**.
 
+Berikut saya buatkan draft lengkap `README.md` untuk repository GitHub Anda:
 
+---
+
+```md
 # 🌐 Mokko Project Website
 Website resmi **PT. Mokko Otomasi Indonesia** — solusi otomasi industri terdepan dengan fokus pada **PLC, SCADA, IoT, Conveyor, Robotika, dan Integrasi Sistem**.  
 Dibangun menggunakan **HTML5, CSS3 (Tailwind CSS), dan JavaScript** dengan desain modern, animasi interaktif, serta optimasi SEO & aksesibilitas.
@@ -49,6 +54,7 @@ Dibangun menggunakan **HTML5, CSS3 (Tailwind CSS), dan JavaScript** dengan desai
 ---
 
 ## 🏗️ Struktur Folder (contoh)
+```
 
 mokko-website/
 ├── index.html          # Halaman utama
@@ -62,6 +68,7 @@ mokko-website/
 │   └── videos/         # Video background (opsional di hero section)
 └── README.md
 
+````
 
 ---
 
@@ -78,20 +85,20 @@ mokko-website/
 
 ## 📋 Instalasi & Penggunaan
 Clone repo ini dan jalankan secara lokal menggunakan browser:
-bash
+```bash
 git clone https://github.com/username/mokko-website.git
 cd mokko-website
-`
+````
 
 Buka file `index.html` langsung di browser, atau gunakan server lokal:
 
-bash
+```bash
 # Python
 python3 -m http.server 8080
 
 # Node.js (http-server)
 npx http-server .
-
+```
 
 Akses di:
 👉 [http://localhost:8080](http://localhost:8080)
@@ -131,18 +138,9 @@ Akses di:
 
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
-## 📜 Lisensi
-
-Proyek ini dilisensikan di bawah **MIT License** — artinya Anda bebas menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, dan/atau menjual salinan kode ini, selama atribusi kepada **PT. Mokko Otomasi Indonesia** tetap dicantumkan.
-
-Detail lengkap dapat dibaca pada file [LICENSE](LICENSE).
+```
 
 ---
 
-### Ringkasan MIT License
-- ✔️ Boleh digunakan secara pribadi maupun komersial  
-- ✔️ Boleh dimodifikasi dan didistribusikan  
-- ✔️ Boleh digunakan dalam proyek open source maupun closed source  
-- ❌ Tidak ada garansi — penggunaan kode sepenuhnya menjadi tanggung jawab pengguna  
-- ❌ Harus mencantumkan copyright dan izin lisensi  
-
+Mau saya buatkan juga **badge GitHub (build, license, last commit, dsb.)** biar lebih profesional di atas `README.md` ini?
+```
