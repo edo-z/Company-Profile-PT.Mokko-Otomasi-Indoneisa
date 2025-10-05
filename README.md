@@ -10,6 +10,8 @@ Dibangun menggunakan **HTML5, CSS3 (Tailwind CSS), dan JavaScript** dengan desai
 - **service.html** → Layanan otomasi industri (IoT, kontrol & automation, dukungan teknis 24/7, maintenance, dsb.)  
 - **product.html** → Katalog produk otomasi (PLC, SCADA, conveyor, robot, solusi IoT)  
 - **project.html** → Portofolio proyek (otomasi pabrik, sistem kemasan otomatis, dll.)  
+- **privacy-policy.html** → Kebijakan privasi resmi terkait pengelolaan data pengguna  
+- **terms-of-service.html** → Syarat & ketentuan resmi penggunaan layanan  
 
 ---
 
@@ -51,18 +53,20 @@ Dibangun menggunakan **HTML5, CSS3 (Tailwind CSS), dan JavaScript** dengan desai
 ```
 
 mokko-website/
-├── index.html          # Halaman utama
-├── service.html        # Layanan
-├── product.html        # Produk
-├── project.html        # Portofolio
+├── index.html             # Halaman utama
+├── service.html           # Layanan
+├── product.html           # Produk
+├── project.html           # Portofolio
+├── privacy-policy.html    # Kebijakan Privasi
+├── terms-of-service.html  # Syarat & Ketentuan
 ├── assets/
-│   ├── css/            # CSS custom
-│   ├── js/             # JS interaktif (AOS, gallery, scroll)
-│   ├── img/            # Gambar dan ikon
-│   └── videos/         # Video background (opsional di hero section)
+│   ├── css/               # CSS custom
+│   ├── js/                # JS interaktif (AOS, gallery, scroll)
+│   ├── img/               # Gambar dan ikon
+│   └── videos/            # Video background (opsional di hero section)
 └── README.md
 
-```
+````
 
 ---
 
@@ -82,7 +86,7 @@ Clone repo ini dan jalankan secara lokal menggunakan browser:
 ```bash
 git clone https://github.com/username/mokko-website.git
 cd mokko-website
-```
+````
 
 Buka file `index.html` langsung di browser, atau gunakan server lokal:
 
@@ -118,6 +122,18 @@ Akses di:
 
 ---
 
+## 📜 Legal Pages
+
+Repository ini juga menyertakan halaman hukum resmi untuk mendukung transparansi dan kepatuhan:
+
+* `privacy-policy.html` → Menjelaskan kebijakan privasi PT. Mokko Otomasi Indonesia terkait pengumpulan, penyimpanan, dan penggunaan data pengguna.
+* `terms-of-service.html` → Berisi syarat dan ketentuan resmi penggunaan layanan, berlaku efektif sejak 1 Januari 2025.
+
+Kedua halaman ini menggunakan struktur HTML5, meta tags SEO, serta integrasi **Open Graph** dan **Twitter Card** untuk memastikan kompatibilitas penuh dengan mesin pencari dan media sosial.
+Halaman tersebut juga mengikuti standar aksesibilitas (skip link, struktur heading yang jelas, dan navigasi responsif).
+
+---
+
 ## 📞 Kontak
 
 **PT. Mokko Otomasi Indonesia**
@@ -134,14 +150,10 @@ Proyek ini dilisensikan di bawah **MIT License** — artinya Anda bebas mengguna
 
 Detail lengkap dapat dibaca pada file [LICENSE](LICENSE).
 
----
-
 ### Ringkasan MIT License
-- ✔️ Boleh digunakan secara pribadi maupun komersial  
-- ✔️ Boleh dimodifikasi dan didistribusikan  
-- ✔️ Boleh digunakan dalam proyek open source maupun closed source  
-- ❌ Tidak ada garansi — penggunaan kode sepenuhnya menjadi tanggung jawab pengguna  
-- ❌ Harus mencantumkan copyright dan izin lisensi  
 
-
-
+* ✔️ Boleh digunakan secara pribadi maupun komersial
+* ✔️ Boleh dimodifikasi dan didistribusikan
+* ✔️ Boleh digunakan dalam proyek open source maupun closed source
+* ❌ Tidak ada garansi — penggunaan kode sepenuhnya menjadi tanggung jawab pengguna
+* ❌ Harus mencantumkan copyright dan izin lisensi
