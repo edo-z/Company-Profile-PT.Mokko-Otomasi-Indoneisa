@@ -1,6 +1,4 @@
-Bagus 👍 Saya sudah lihat struktur dan konten dari file HTML yang Anda kirim (`index.html`, `product.html`, `project.html`, `service.html`). Dari situ kita bisa menyusun dokumentasi `README.md` yang spesifik sesuai dengan project website **PT. Mokko Otomasi Indonesia**.
 
-Berikut saya buatkan draft lengkap `README.md` untuk repository GitHub Anda:
 
 ---
 
