@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - PT. Mokko Otomasi Indonesia</title>
+    <meta name="description" content="Kebijakan Privasi resmi PT. Mokko Otomasi Indonesia. Efektif sejak 1 Januari 2025.">
+    <meta name="keywords" content="kebijakan privasi, privacy policy, PT Mokko Otomasi Indonesia, perlindungan data, keamanan informasi">
+    <meta name="author" content="PT. Mokko Otomasi Indonesia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mokkoproject.biz.id/mokko/pages/privacy-policy">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Kebijakan Privasi - PT. Mokko Otomasi Indonesia">
+    <meta property="og:description" content="Kebijakan Privasi resmi PT. Mokko Otomasi Indonesia. Efektif sejak 1 Januari 2025.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mokkoproject.biz.id/mokko/pages/privacy-policy">
+    <meta property="og:image" content="https://mokkoproject.biz.id/mokko/assets/img/mokkologo.png">
+    <meta property="og:site_name" content="PT. Mokko Otomasi Indonesia">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kebijakan Privasi - PT. Mokko Otomasi Indonesia">
+    <meta name="twitter:description" content="Kebijakan Privasi resmi PT. Mokko Otomasi Indonesia. Efektif sejak 1 Januari 2025.">
+    <meta name="twitter:image" content="https://mokkoproject.biz.id/mokko/assets/img/mokkologo.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PT. Mokko Otomasi Indonesia",
+        "url": "https://mokkoproject.biz.id",
+        "logo": "https://mokkoproject.biz.id/mokko/assets/img/mokkologo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-31-99113264",
+            "contactType": "customer service",
+            "email": "sales@mokko.co.id"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Raya Deandles Golokan Sidayu",
+            "addressLocality": "Gresik",
+            "addressRegion": "Jawa Timur",
+            "postalCode": "61153",
+            "addressCountry": "ID"
+        },
+        "sameAs": [
+            "https://www.facebook.com/mokkoindonesia",
+            "https://www.linkedin.com/company/mokko-otomasi-indonesia",
+            "https://www.instagram.com/mokko_indonesia",
+            "https://www.youtube.com/channel/mokkoindonesia"
+        ]
+    }
+    </script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #60a5fa;
+            --light-color: #f3f4f6;
+            --dark-color: #1f2937;
+            --gradient-1: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            --gradient-2: linear-gradient(135deg, #60a5fa, #93c5fd);
+            --main-bg: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+        }
+
+        /* Enhanced scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-color);
+        }
+        
+        /* Body background pattern */
+        body {
+            background-color: var(--bg-secondary);
+            background-image: 
+                radial-gradient(at 47% 33%, hsl(215.00, 73%, 97%) 0, transparent 59%), 
+                radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+            color: var(--text-primary);
+        }
+        
+        /* Main Content Background */
+        .main-content-wrapper {
+            background: var(--main-bg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .main-content-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.7) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 0;
+        }
+        
+        .main-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Enhanced header with glass effect */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        /* Skip to content link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+            border-radius: 0 0 4px 0;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            position: relative;
+        }
+        
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-item {
+            position: relative;
+            margin: 0 0.5rem;
+        }
+        
+        .nav-link {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--primary-color);
+            background: rgba(59, 130, 246, 0.05);
+            outline: none;
+        }
+        
+        .nav-link:hover::before,
+        .nav-link:focus::before {
+            width: 80%;
+        }
+        
+        .nav-link i {
+            margin-left: 0.25rem;
+            font-size: 0.75rem;
+            transition: transform 0.3s ease;
+        }
+        
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 280px;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            margin-top: 0.5rem;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-content a {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .dropdown-content a:hover,
+        .dropdown-content a:focus {
+            background: rgba(59, 130, 246, 0.05);
+            color: var(--primary-color);
+            padding-left: 1.5rem;
+            outline: none;
+        }
+        
+        .dropdown-content a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 3px;
+            height: 0;
+            background: var(--gradient-1);
+            transform: translateY(-50%);
+            transition: height 0.3s ease;
+        }
+        
+        .dropdown-content a:hover::before,
+        .dropdown-content a:focus::before {
+            height: 70%;
+        }
+        
+        /* Sub-dropdown Styles */
+        .sub-dropdown {
+            position: relative;
+        }
+        
+        .sub-dropdown-content {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            min-width: 220px;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+            z-index: 1001;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            margin-left: 0.5rem;
+        }
+        
+        .sub-dropdown:hover .sub-dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+        
+        .sub-dropdown-content a {
+            padding: 0.75rem 1.25rem;
+            font-size: 0.875rem;
+        }
+        
+        .category {
+            justify-content: space-between;
+        }
+        
+        .category i {
+            margin-left: auto;
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+        
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-toggle:hover,
+        .mobile-menu-toggle:focus {
+            background: rgba(59, 130, 246, 0.1);
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        
+        /* Mobile Navigation */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            height: 100vh;
+            background: white;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .mobile-nav.active {
+            right: 0;
+        }
+        
+        .mobile-nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .mobile-nav-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #6b7280;
+            transition: color 0.3s ease;
+        }
+        
+        .mobile-nav-close:hover,
+        .mobile-nav-close:focus {
+            color: var(--primary-color);
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        
+        .mobile-nav-menu {
+            padding: 1rem;
+        }
+        
+        .mobile-nav-item {
+            margin-bottom: 0.5rem;
+        }
+        
+        .mobile-nav-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+        }
+        
+        .mobile-nav-link:hover,
+        .mobile-nav-link:focus {
+            background: rgba(59, 130, 246, 0.05);
+            color: var(--primary-color);
+            outline: none;
+        }
+        
+        .mobile-dropdown {
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+        
+        .mobile-dropdown.active {
+            display: block;
+        }
+        
+        .mobile-dropdown-toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .mobile-dropdown-toggle i {
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-dropdown-toggle.active i {
+            transform: rotate(180deg);
+        }
+        
+        /* Mobile Overlay */
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Content Section Styles */
+        .content-section {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .content-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: var(--gradient-1);
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .content-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            background: var(--gradient-2);
+            color: white;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+            flex-shrink: 0;
+        }
+        
+        .section-title-text {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        .section-content {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .section-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-content li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        .section-content li::before {
+            content: '•';
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -1rem;
+        }
+        
+        .subsection {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px dashed rgba(59, 130, 246, 0.2);
+        }
+        
+        .subsection-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .subsection-title i {
+            margin-right: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.8)), 
+                        url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 1rem;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            color: white;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 800px;
+        }
+
+        /* Enhanced CTA Button */
+        .cta-button {
+            background: linear-gradient(135deg, #3b82f6, #1e40af);
+            color: white;
+            font-weight: bold;
+            padding: 0.875rem 2rem;
+            border-radius: 0.75rem;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+
+        .cta-button:hover,
+        .cta-button:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+            outline: none;
+        }
+
+        .cta-button:hover::before,
+        .cta-button:focus::before {
+            left: 100%;
+        }
+
+        /* FAQ Styles */
+        .faq-section {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .faq-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .faq-title i {
+            margin-right: 0.75rem;
+            color: var(--secondary-color);
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            padding: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--secondary-color);
+        }
+        
+        .faq-answer {
+            padding: 0 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 1.25rem 1.25rem;
+            max-height: 500px;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* Notification Styling */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 16px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.success {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .notification.error {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+
+        .notification.info {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title-text {
+                font-size: 1.5rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            
+            .content-section {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #e5e7eb;
+            }
+            
+            body {
+                background: white;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 transition-colors duration-300">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://mokkoproject.biz.id/mokko/assets/img/mokkologo.png" alt="logo" class="h-12">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="navbar hidden lg:block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="products.html" class="nav-link">
+                                Produk <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="sub-dropdown">
+                                    <a href="products.html" class="category">
+                                        Automation <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <div class="sub-dropdown-content">
+                                        <a href="products.html">PLC</a>
+                                        <a href="products.html">HMI</a>
+                                        <a href="products.html">Servo</a>
+                                        <a href="products.html">Inverter</a>
+                                        <a href="products.html">SCADA</a>
+                                        <a href="products.html">Robot</a>
+                                        <a href="products.html">Upgrade Machine System</a>
+                                    </div>
+                                </div>
+                                <div class="sub-dropdown">
+                                    <a href="products.html#conveyor" class="category">
+                                        Conveyor <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <div class="sub-dropdown-content">
+                                        <a href="products.html">Flat Belt</a>
+                                        <a href="products.html">Top Table Chain</a>
+                                        <a href="products.html">Modular</a>
+                                        <a href="products.html">Wire Mash</a>
+                                        <a href="products.html">Packaging</a>
+                                        <a href="products.html">Palletizing</a>
+                                        <a href="products.html">Roller Conveyor</a>
+                                    </div>
+                                </div>
+                                <div class="sub-dropdown">
+                                    <a href="products.html" class="category">
+                                        Internet of Things (IoT)
+                                    </a>
+                                </div>
+                                <div class="sub-dropdown">
+                                    <a href="products.html" class="category">
+                                        Instrumentations <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <div class="sub-dropdown-content">
+                                        <a href="products.html">Flowmeter</a>
+                                        <a href="products.html">Liquid Analysis</a>
+                                        <a href="products.html">Pressure Transmitter</a>
+                                        <a href="products.html">Level</a>
+                                        <a href="products.html">Valve</a>
+                                        <a href="products.html">Gas Detector</a>
+                                        <a href="products.html">Temperature</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">Proyek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="collaboration.html" class="nav-link">Kolaborasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="partners.html" class="nav-link">Mitra</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle lg:hidden" id="mobile-menu-toggle">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+        <div class="mobile-nav-header">
+            <img src="https://mokkoproject.biz.id/mokko/assets/img/mokkologo.png" alt="logo PT. Mokko Otomasi Indonesia" class="h-10">
+            <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close mobile menu">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-menu">
+            <div class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link">Beranda</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link">Tentang Kami</a>
+            </div>
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link mobile-dropdown-toggle" data-dropdown="products-dropdown" role="button" aria-expanded="false">
+                    Produk <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <div class="mobile-dropdown" id="products-dropdown">
+                    <div class="mobile-nav-item">
+                        <div class="mobile-nav-link mobile-dropdown-toggle" data-dropdown="automation-dropdown" role="button" aria-expanded="false">
+                            Automation <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="mobile-dropdown" id="automation-dropdown">
+                            <div class="mobile-nav-item">
+                                <a href="products.html#plc" class="mobile-nav-link">PLC</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#hmi" class="mobile-nav-link">HMI</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#servo" class="mobile-nav-link">Servo</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#inverter" class="mobile-nav-link">Inverter</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#scada" class="mobile-nav-link">SCADA</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#robot" class="mobile-nav-link">Robot</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#upgrade" class="mobile-nav-link">Upgrade Machine System</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-nav-item">
+                        <div class="mobile-nav-link mobile-dropdown-toggle" data-dropdown="conveyor-dropdown" role="button" aria-expanded="false">
+                            Conveyor <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="mobile-dropdown" id="conveyor-dropdown">
+                            <div class="mobile-nav-item">
+                                <a href="products.html#flat-belt" class="mobile-nav-link">Flat Belt</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#top-table" class="mobile-nav-link">Top Table Chain</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#modular" class="mobile-nav-link">Modular</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#wire-mash" class="mobile-nav-link">Wire Mash</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#packaging" class="mobile-nav-link">Packaging</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#palletizing" class="mobile-nav-link">Palletizing</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#roller" class="mobile-nav-link">Roller Conveyor</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-nav-item">
+                        <a href="products.html#iot" class="mobile-nav-link">Internet of Things (IoT)</a>
+                    </div>
+                    <div class="mobile-nav-item">
+                        <div class="mobile-nav-link mobile-dropdown-toggle" data-dropdown="instrumentations-dropdown" role="button" aria-expanded="false">
+                            Instrumentations <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="mobile-dropdown" id="instrumentations-dropdown">
+                            <div class="mobile-nav-item">
+                                <a href="products.html#flowmeter" class="mobile-nav-link">Flowmeter</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#liquid-analysis" class="mobile-nav-link">Liquid Analysis</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#pressure" class="mobile-nav-link">Pressure Transmitter</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#level" class="mobile-nav-link">Level</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#valve" class="mobile-nav-link">Valve</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#gas-detector" class="mobile-nav-link">Gas Detector</a>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <a href="products.html#temperature" class="mobile-nav-link">Temperature</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="services.html" class="mobile-nav-link">Layanan</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="projects.html" class="mobile-nav-link">Proyek</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="collaboration.html" class="mobile-nav-link">Kolaborasi</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="partners.html" class="mobile-nav-link">Mitra</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content-wrapper">
+        <div class="container mx-auto px-4 py-8 max-w-6xl">
+            
+            <!-- Main Content -->
+            <main class="main-content" id="main-content">
+                <!-- Hero Section -->
+                <section class="hero-section no-print" aria-labelledby="hero-title">
+                    <div class="hero-content">
+                        <h1 id="hero-title" class="hero-title">Kebijakan Privasi</h1>
+                        <p class="hero-subtitle">
+                            Di PT. Mokko Otomasi Indonesia, kami berkomitmen untuk melindungi privasi dan keamanan data pribadi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi yang Anda berikan kepada kami.
+                        </p>
+                        <div class="text-center">
+                            <button id="download-pdf" class="cta-button" aria-label="Download PDF version">
+                                <i class="fas fa-file-pdf mr-2" aria-hidden="true"></i> Download PDF
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Content Sections -->
+                <div id="content-container">
+                    <!-- Pendahuluan -->
+                    <section id="pendahuluan" class="content-section page-break" aria-labelledby="pendahuluan-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h2 id="pendahuluan-title" class="section-title-text">1. Pendahuluan</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Selamat datang di Kebijakan Privasi PT. Mokko Otomasi Indonesia. Dokumen ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi Anda ketika Anda mengunjungi website kami, menggunakan layanan kami, atau berinteraksi dengan perusahaan kami.
+                            </p>
+                            <p>
+                                PT. Mokko Otomasi Indonesia ("Kami", "Perusahaan") menghargai privasi Anda dan berkomitmen untuk melindungi data pribadi yang Anda percayakan kepada kami. Kebijakan Privasi ini berlaku untuk semua informasi yang dikumpulkan melalui website kami, formulir online, email, telepon, atau interaksi langsung dengan perwakilan kami.
+                            </p>
+                            <p>
+                                Dengan menggunakan website atau layanan kami, Anda menyetujui pengumpulan dan penggunaan informasi sesuai dengan Kebijakan Privasi ini. Jika Anda tidak setuju dengan praktik yang dijelaskan dalam kebijakan ini, mohon jangan menggunakan website atau layanan kami.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Informasi yang Kami Kumpulkan -->
+                    <section id="informasi-dikumpulkan" class="content-section" aria-labelledby="informasi-dikumpulkan-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h2 id="informasi-dikumpulkan-title" class="section-title-text">2. Informasi yang Kami Kumpulkan</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Kami mengumpulkan berbagai jenis informasi untuk menyediakan, meningkatkan, dan mempersonalisasi layanan kami:
+                            </p>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="informasi-identitas">
+                                    <i class="fas fa-user" aria-hidden="true"></i> 2.1 Informasi Identitas Pribadi
+                                </h3>
+                                <p>
+                                    Informasi identitas pribadi adalah data yang dapat digunakan untuk mengidentifikasi Anda secara langsung atau tidak langsung, termasuk:
+                                </p>
+                                <ul>
+                                    <li>Nama lengkap dan nama perusahaan</li>
+                                    <li>Alamat email dan nomor telepon</li>
+                                    <li>Alamat fisik dan alamat penagihan</li>
+                                    <li>Informasi demografis seperti jabatan atau departemen</li>
+                                    <li>Informasi kontak tambahan yang Anda berikan secara sukarela</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="informasi-teknis">
+                                    <i class="fas fa-cogs" aria-hidden="true"></i> 2.2 Informasi Teknis dan Penggunaan
+                                </h3>
+                                <p>
+                                    Ketika Anda mengakses website kami, kami secara otomatis mengumpulkan informasi teknis tertentu:
+                                </p>
+                                <ul>
+                                    <li>Alamat IP dan jenis perangkat yang Anda gunakan</li>
+                                    <li>Jenis browser dan sistem operasi</li>
+                                    <li>Halaman yang Anda kunjungi dan waktu yang dihabiskan</li>
+                                    <li>Referensi website yang mengarah Anda ke situs kami</li>
+                                    <li>Informasi lokasi perkiraan dari alamat IP Anda</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="informasi-cookies">
+                                    <i class="fas fa-cookie-bite" aria-hidden="true"></i> 2.3 Informasi Cookies
+                                </h3>
+                                <p>
+                                    Website kami menggunakan cookies untuk meningkatkan pengalaman pengguna dan menganalisis traffic. Cookies adalah file teks kecil yang disimpan di browser Anda. Kami mengumpulkan:
+                                </p>
+                                <ul>
+                                    <li>Cookies yang diperlukan untuk fungsi dasar website</li>
+                                    <li>Cookies preferensi untuk mengingat pengaturan Anda</li>
+                                    <li>Cookies analitis untuk memahami bagaimana Anda menggunakan website kami</li>
+                                    <li>Cookies pemasaran untuk menampilkan iklan yang relevan (dengan persetujuan Anda)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Cara Kami Menggunakan Informasi -->
+                    <section id="penggunaan-informasi" class="content-section" aria-labelledby="penggunaan-informasi-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h2 id="penggunaan-informasi-title" class="section-title-text">3. Cara Kami Menggunakan Informasi</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Kami menggunakan informasi yang dikumpulkan untuk berbagai tujuan yang sah sesuai dengan hukum yang berlaku:
+                            </p>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="penyediaan-layanan">
+                                    <i class="fas fa-concierge-bell" aria-hidden="true"></i> 3.1 Penyediaan dan Peningkatan Layanan
+                                </h3>
+                                <p>
+                                    Informasi yang Anda berikan membantu kami untuk:
+                                </p>
+                                <ul>
+                                    <li>Menyediakan produk dan layanan yang Anda minta</li>
+                                    <li>Memproses pesanan dan transaksi Anda</li>
+                                    <li>Mengkomunikasikan dengan Anda tentang pesanan atau layanan</li>
+                                    <li>Mempersonalisasi pengalaman Anda dengan website kami</li>
+                                    <li>Meningkatkan dan mengoptimalkan website dan layanan kami</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="komunikasi">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i> 3.2 Komunikasi dan Pemasaran
+                                </h3>
+                                <p>
+                                    Kami menggunakan informasi kontak Anda untuk:
+                                </p>
+                                <ul>
+                                    <li>Mengirim informasi tentang pesanan atau layanan Anda</li>
+                                    <li>Memberikan dukungan pelanggan dan bantuan teknis</li>
+                                    <li>Mengirim newsletter atau informasi produk (dengan persetujuan Anda)</li>
+                                    <li>Memberikan penawaran khusus atau promosi yang relevan</li>
+                                </ul>
+                                <p>
+                                    Anda dapat berhenti berlangganan komunikasi pemasaran kapan saja dengan mengklik link "unsubscribe" di email kami atau menghubungi kami langsung.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="analitik">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i> 3.3 Analitik dan Penelitian
+                                </h3>
+                                <p>
+                                    Kami menggunakan data anonim dan teragregasi untuk:
+                                </p>
+                                <ul>
+                                    <li>Menganalisis bagaimana pengunjung menggunakan website kami</li>
+                                    <li>Mengidentifikasi tren dan pola penggunaan</li>
+                                    <li>Meningkatkan konten dan fungsionalitas website</li>
+                                    <li>Mengembangkan produk dan layanan baru berdasarkan kebutuhan pelanggan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Perlindungan Informasi -->
+                    <section id="perlindungan-informasi" class="content-section" aria-labelledby="perlindungan-informasi-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h2 id="perlindungan-informasi-title" class="section-title-text">4. Perlindungan Informasi</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Kami menerapkan langkah-langkah keamanan yang ketat untuk melindungi informasi pribadi Anda dari akses, penggunaan, perubahan, atau penghancuran yang tidak sah:
+                            </p>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="keamanan-teknis">
+                                    <i class="fas fa-shield-alt" aria-hidden="true"></i> 4.1 Keamanan Teknis
+                                </h3>
+                                <p>
+                                    Langkah-langkah keamanan teknis yang kami terapkan meliputi:
+                                </p>
+                                <ul>
+                                    <li>Enkripsi data saat transmisi dan penyimpanan</li>
+                                    <li>Firewall dan sistem deteksi intrusi</li>
+                                    <li>Autentikasi multi-faktor untuk akses sistem</li>
+                                    <li>Pembaruan keamanan rutin untuk semua sistem</li>
+                                    <li>Uji penetrasi dan audit keamanan berkala</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="keamanan-fisik">
+                                    <i class="fas fa-building" aria-hidden="true"></i> 4.2 Keamanan Fisik dan Organisasi
+                                </h3>
+                                <p>
+                                    Kami juga menerapkan langkah-langkah keamanan fisik dan organisasi:
+                                </p>
+                                <ul>
+                                    <li>Pembatasan akses fisik ke server dan data center</li>
+                                    <li>Kebijakan akses berbasis peran (role-based access)</li>
+                                    <li>Pelatihan keamanan data untuk semua karyawan</li>
+                                    <li>Perjanjian kerahasiaan dengan karyawan dan mitra</li>
+                                    <li>Prosedur respons insiden keamanan data</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="retensi-data">
+                                    <i class="fas fa-archive" aria-hidden="true"></i> 4.3 Retensi Data
+                                </h3>
+                                <p>
+                                    Kami menyimpan informasi pribadi Anda hanya selama diperlukan untuk tujuan yang telah ditentukan:
+                                </p>
+                                <ul>
+                                    <li>Data pelanggan: Selama hubungan bisnis aktif + 5 tahun</li>
+                                    <li>Data pemasaran: Hingga Anda berhenti berlangganan</li>
+                                    <li>Data analitik: Maksimal 2 tahun dalam bentuk anonim</li>
+                                    <li>Data keuangan: Sesuai persyaratan hukum perpajakan</li>
+                                </ul>
+                                <p>
+                                    Setelah periode retensi berakhir, data akan dihapus atau dianonimkan secara permanen sesuai dengan kebijakan internal kami.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Berbagi Informasi dengan Pihak Ketiga -->
+                    <section id="pihak-ketiga" class="content-section" aria-labelledby="pihak-ketiga-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h2 id="pihak-ketiga-title" class="section-title-text">5. Berbagi Informasi dengan Pihak Ketiga</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Kami tidak menjual, menyewakan, atau memperdagangkan informasi pribadi Anda kepada pihak ketiga. Kami hanya berbagi informasi dalam keadaan tertentu:
+                            </p>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="penyedia-layanan">
+                                    <i class="fas fa-tools" aria-hidden="true"></i> 5.1 Penyedia Layanan
+                                </h3>
+                                <p>
+                                    Kami mungkin berbagi informasi dengan penyedia layanan pihak ketiga yang membantu operasi bisnis kami, seperti:
+                                </p>
+                                <ul>
+                                    <li>Penyedia hosting dan infrastruktur IT</li>
+                                    <li>Penyedia layanan email dan komunikasi</li>
+                                    <li>Penyedia layanan analitik dan pelaporan</li>
+                                    <li>Penyedia layanan pemrosesan pembayaran</li>
+                                </ul>
+                                <p>
+                                    Semua penyedia layanan pihak ketiga diwajibkan untuk melindungi informasi Anda dan hanya menggunakannya untuk menyediakan layanan kepada kami.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="kewajiban-hukum">
+                                    <i class="fas fa-gavel" aria-hidden="true"></i> 5.2 Kewajiban Hukum
+                                </h3>
+                                <p>
+                                    Kami mungkin mengungkapkan informasi Anda jika diwajibkan oleh hukum atau jika kami percaya bahwa tindakan tersebut diperlukan untuk:
+                                </p>
+                                <ul>
+                                    <li>Mematuhi proses hukum atau perintah pengadilan</li>
+                                    <li>Melindungi hak, properti, atau keselamatan PT. Mokko Otomasi Indonesia</li>
+                                    <li>Mencegah atau menyelidiki aktivitas ilegal atau penipuan</li>
+                                    <li>Melindungi keselamatan pribadi pengguna atau publik</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="perubahan-kontrol">
+                                    <i class="fas fa-exchange-alt" aria-hidden="true"></i> 5.3 Perubahan Kontrol Bisnis
+                                </h3>
+                                <p>
+                                    Jika PT. Mokko Otomasi Indonesia terlibat dalam merger, akuisisi, atau penjualan aset, informasi pribadi Anda dapat menjadi bagian dari aset yang ditransfer. Kami akan memberitahukan Anda sebelum informasi pribadi Anda menjadi subjek kebijakan privasi yang berbeda.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Hak Privasi Anda -->
+                    <section id="hak-privasi" class="content-section" aria-labelledby="hak-privasi-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h2 id="hak-privasi-title" class="section-title-text">6. Hak Privasi Anda</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Anda memiliki hak-hak tertentu terkait informasi pribadi Anda yang kami simpan. Hak-hak ini termasuk:
+                            </p>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="hak-akses">
+                                    <i class="fas fa-eye" aria-hidden="true"></i> 6.1 Hak Akses
+                                </h3>
+                                <p>
+                                    Anda berhak untuk meminta salinan informasi pribadi yang kami simpan tentang Anda. Ini membantu Anda memverifikasi keakuratan data dan memahami bagaimana kami menggunakannya.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="hak-koreksi">
+                                    <i class="fas fa-edit" aria-hidden="true"></i> 6.2 Hak Koreksi
+                                </h3>
+                                <p>
+                                    Anda berhak untuk meminta koreksi informasi pribadi yang tidak akurat atau tidak lengkap. Kami akan berusaha untuk memperbarui informasi tersebut segera setelah menerima permintaan yang valid.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="hak-penghapusan">
+                                    <i class="fas fa-trash-alt" aria-hidden="true"></i> 6.3 Hak Penghapusan
+                                </h3>
+                                <p>
+                                    Dalam keadaan tertentu, Anda dapat meminta penghapusan informasi pribadi Anda. Kami akan mematuhi permintaan tersebut kecuali jika kami diwajibkan secara hukum untuk menyimpan informasi tersebut.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="hak-pembatasan">
+                                    <i class="fas fa-ban" aria-hidden="true"></i> 6.4 Hak Pembatasan Pengolahan
+                                </h3>
+                                <p>
+                                    Anda berhak untuk membatasi atau menolak pengolahan informasi pribadi Anda dalam keadaan tertentu, terutama untuk tujuan pemasaran langsung.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="hak-portabilitas">
+                                    <i class="fas fa-file-export" aria-hidden="true"></i> 6.5 Hak Portabilitas Data
+                                </h3>
+                                <p>
+                                    Anda berhak untuk menerima informasi pribadi yang Anda berikan kepada kami dalam format terstruktur, umum digunakan, dan dapat dibaca mesin, dan untuk mentransmisikan data tersebut ke penyedia layanan lain.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="cara-melaksanakan-hak">
+                                    <i class="fas fa-clipboard-list" aria-hidden="true"></i> 6.6 Cara Melaksanakan Hak Anda
+                                </h3>
+                                <p>
+                                    Untuk melaksanakan hak privasi Anda, silakan hubungi kami melalui:
+                                </p>
+                                <ul>
+                                    <li>Email: privacy@mokko.co.id</li>
+                                    <li>Telepon: 031-99113264</li>
+                                    <li>Surat: Jl. Raya Deandles Golokan Sidayu, Gresik, Jawa Timur 61153</li>
+                                </ul>
+                                <p>
+                                    Kami akan merespons permintaan Anda dalam waktu 30 hari sesuai dengan peraturan perlindungan data yang berlaku.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Kebijakan Cookies -->
+                    <section id="kebijakan-cookies" class="content-section" aria-labelledby="kebijakan-cookies-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-cookie-bite"></i>
+                            </div>
+                            <h2 id="kebijakan-cookies-title" class="section-title-text">7. Kebijakan Cookies</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Website kami menggunakan cookies untuk meningkatkan pengalaman pengguna dan menganalisis traffic. Cookies adalah file teks kecil yang ditempatkan di komputer Anda saat Anda mengunjungi website.
+                            </p>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="jenis-cookies">
+                                    <i class="fas fa-list" aria-hidden="true"></i> 7.1 Jenis Cookies yang Kami Gunakan
+                                </h3>
+                                <ul>
+                                    <li><strong>Cookies Esensial:</strong> Diperlukan untuk fungsi dasar website dan tidak dapat dinonaktifkan.</li>
+                                    <li><strong>Cookies Performa:</strong> Mengumpulkan informasi anonim tentang bagaimana pengunjung menggunakan website kami.</li>
+                                    <li><strong>Cookies Fungsionalitas:</strong> Mengingat preferensi Anda seperti pengaturan bahasa atau lokasi.</li>
+                                    <li><strong>Cookies Targeting/Pemasaran:</strong> Digunakan untuk menampilkan iklan yang relevan berdasarkan minat Anda.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="kelola-cookies">
+                                    <i class="fas fa-cog" aria-hidden="true"></i> 7.2 Mengelola Preferensi Cookies
+                                </h3>
+                                <p>
+                                    Anda dapat mengelola preferensi cookies melalui pengaturan browser Anda atau melalui banner cookie consent yang muncul saat pertama kali mengunjungi website kami. Anda dapat:
+                                </p>
+                                <ul>
+                                    <li>Menerima semua cookies</li>
+                                    <li>Menolak cookies non-esensial</li>
+                                    <li>Mengelola preferensi cookies kategori per kategori</li>
+                                </ul>
+                                <p>
+                                    Menonaktifkan cookies esensial dapat mempengaruhi fungsionalitas website dan layanan yang kami sediakan.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Perubahan Kebijakan -->
+                    <section id="perubahan-kebijakan" class="content-section" aria-labelledby="perubahan-kebijakan-title">
+                        <div class="section-header">
+                            <div class="section-icon" aria-hidden="true">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h2 id="perubahan-kebijakan-title" class="section-title-text">8. Perubahan Kebijakan Privasi</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                PT. Mokko Otomasi Indonesia berhak untuk memperbarui Kebijakan Privasi ini sewaktu-waktu untuk mencerminkan perubahan dalam praktik bisnis kami atau perubahan dalam hukum perlindungan data.
+                            </p>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="pemberitahuan-perubahan">
+                                    <i class="fas fa-bell" aria-hidden="true"></i> 8.1 Pemberitahuan Perubahan
+                                </h3>
+                                <p>
+                                    Kami akan memberitahukan Anda tentang perubahan material pada Kebijakan Privasi ini melalui:
+                                </p>
+                                <ul>
+                                    <li>Pemberitahuan di website kami</li>
+                                    <li>Email ke alamat terdaftar Anda (jika berlaku)</li>
+                                    <li>Pemberitahuan langsung untuk pelanggan korporat</li>
+                                </ul>
+                                <p>
+                                    Perubahan material adalah perubahan yang signifikan yang mempengaruhi hak dan kewajiban Anda terkait informasi pribadi Anda.
+                                </p>
+                            </div>
+                            
+                            <div class="subsection">
+                                <h3 class="subsection-title" id="efektif-perubahan">
+                                    <i class="fas fa-calendar-check" aria-hidden="true"></i> 8.2 Kapan Perubahan Berlaku
+                                </h3>
+                                <p>
+                                    Perubahan pada Kebijakan Privasi ini akan berlaku efektif pada tanggal yang ditentukan dalam pemberitahuan perubahan. Penggunaan berkelanjutan Anda terhadap website atau layanan kami setelah tanggal efektif tersebut merupakan penerimaan Anda terhadap kebijakan yang diperbarui.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQ -->
+                    <section id="faq" class="faq-section" aria-labelledby="faq-title">
+                        <h2 id="faq-title" class="faq-title">
+                            <i class="fas fa-question-circle" aria-hidden="true"></i> 9. Pertanyaan Umum (FAQ)
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div class="faq-item">
+                                <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-1">
+                                    <span>Informasi apa saja yang dikumpulkan oleh PT. Mokko Otomasi Indonesia?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <div class="faq-answer" id="faq-answer-1">
+                                    <p>Kami mengumpulkan informasi identitas pribadi (nama, email, telepon, alamat), informasi teknis (IP, browser, perangkat), dan informasi cookies. Informasi ini dikumpulkan melalui website, formulir online, email, telepon, atau interaksi langsung dengan perwakilan kami.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-2">
+                                    <span>Bagaimana PT. Mokko Otomasi Indonesia melindungi data pribadi saya?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <div class="faq-answer" id="faq-answer-2">
+                                    <p>Kami menerapkan langkah-langkah keamanan teknis seperti enkripsi data, firewall, autentikasi multi-faktor, dan pembaruan keamanan rutin. Selain itu, kami juga memiliki kebijakan keamanan fisik dan organisasi termasuk pembatasan akses, pelatihan karyawan, dan prosedur respons insiden.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-3">
+                                    <span>Apakah PT. Mokko Otomasi Indonesia berbagi data dengan pihak ketiga?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <div class="faq-answer" id="faq-answer-3">
+                                    <p>Kami tidak menjual, menyewakan, atau memperdagangkan informasi pribadi Anda. Kami hanya berbagi data dengan penyedia layanan yang membantu operasi bisnis kami (hosting, email, analitik) dan diwajibkan untuk melindungi informasi Anda. Kami juga dapat mengungkap data jika diwajibkan oleh hukum.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-4">
+                                    <span>Bagaimana cara saya mengakses atau menghapus data pribadi saya?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <div class="faq-answer" id="faq-answer-4">
+                                    <p>Anda dapat menghubungi kami melalui email privacy@mokko.co.id atau telepon 031-99113264 untuk meminta akses, koreksi, atau penghapusan data pribadi Anda. Kami akan merespons permintaan Anda dalam waktu 30 hari sesuai dengan peraturan perlindungan data yang berlaku.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-5">
+                                    <span>Apa kebijakan cookies PT. Mokko Otomasi Indonesia?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <div class="faq-answer" id="faq-answer-5">
+                                    <p>Website kami menggunakan cookies esensial untuk fungsi dasar, cookies performa untuk analitik anonim, cookies fungsionalitas untuk preferensi, dan cookies pemasaran (dengan persetujuan). Anda dapat mengelola preferensi cookies melalui pengaturan browser atau banner cookie consent di website kami.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question" tabindex="0" role="button" aria-expanded="false" aria-controls="faq-answer-6">
+                                    <span>Bagaimana saya mengetahui jika ada perubahan pada kebijakan privasi?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <div class="faq-answer" id="faq-answer-6">
+                                    <p>Kami akan memberitahukan Anda tentang perubahan material pada Kebijakan Privasi melalui pemberitahuan di website kami, email ke alamat terdaftar Anda, atau pemberitahuan langsung untuk pelanggan korporat. Perubahan akan berlaku efektif pada tanggal yang ditentukan dalam pemberitahuan tersebut.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-gray-900 text-white relative overflow-hidden" role="contentinfo">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Newsletter Section -->
+            <div class="bg-gradient-to-r from-blue-800 to-blue-600 rounded-xl p-6 mb-12 shadow-2xl" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-4 md:mb-0 md:mr-6">
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">Dapatkan Update Terbaru</h3>
+                        <p class="text-blue-100 text-sm md:text-base">Daftar newsletter kami untuk mendapatkan informasi terkini tentang solusi otomasi industri</p>
+                    </div>
+                    <form id="newsletter-form" class="flex flex-col sm:flex-row w-full md:w-auto" novalidate>
+                        <input type="email" placeholder="Email Anda" required class="px-4 py-3 rounded-l-lg text-gray-900 w-full sm:w-auto mb-2 sm:mb-0 sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-blue-300" aria-label="Email address">
+                        <button type="submit" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-r-lg hover:bg-gray-100 transition duration-300 whitespace-nowrap">
+                            <i class="fas fa-paper-plane mr-2" aria-hidden="true"></i> Berlangganan
+                        </button>
+                    </form>
+                </div>
+                <div id="newsletter-message" class="mt-3 text-sm text-blue-100 hidden" role="status" aria-live="polite"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <p class="logo text-xl">PT. Mokko Otomasi Indonesia</p>
+                    </div>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">PT. Mokko Otomasi Indonesia menyediakan solusi otomasi industri terdepan untuk masa depan bisnis Anda dengan teknologi IoT dan sistem kontrol yang inovatif.</p>
+                    
+                    <!-- Social Media -->
+                    <nav class="flex space-x-4" aria-label="Social media links">
+                        <a href="https://www.facebook.com/mokkoindonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300 group" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/mokko-otomasi-indonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300 group" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mokko_indonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300 group" aria-label="Instagram">
+                            <i class="fab fa-instagram text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/mokkoindonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300 group" aria-label="YouTube">
+                            <i class="fab fa-youtube text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </div>
+                
+                <!-- Quick Links -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-blue-500">Tautan Cepat</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Beranda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Tentang Kami
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Produk
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Layanan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Proyek
+                            </a>
+                        </li>
+                        <li>
+                            <a href="collaboration.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Kolaborasi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-blue-500">Layanan Kami</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="services.html#automation" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Sistem Kontrol & Automation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#iot" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                IoT Integration
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#machine" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Industrial Machine Maker
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#support" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Dukungan Teknis 24/7
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#maintenance" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Maintenance & Troubleshooting
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-blue-500">Hubungi Kami</h3>
+                    
+                    <!-- Map -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg mb-6 h-48 relative">
+                        <div id="map" class="w-full h-full"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <a href="https://maps.google.com/?q=-6.9807882439533,112.54502960571443" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition">
+                                <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i> Buka di Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Details -->
+                    <dl class="space-y-3">
+                        <div class="flex items-start">
+                            <dt class="sr-only">Alamat</dt>
+                            <dd class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Jl. Raya Deandles Golokan Sidayu</p>
+                                    <p class="text-gray-400 text-sm">Gresik, Jawa Timur 61153</p>
+                                </div>
+                            </dd>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <dt class="sr-only">Telepon</dt>
+                            <dd class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                                    <i class="fas fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <p class="text-gray-400 text-sm">031-99113264</p>
+                            </dd>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <dt class="sr-only">Email</dt>
+                            <dd class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <p class="text-gray-400 text-sm">sales@mokko.co.id</p>
+                            </dd>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <dt class="sr-only">Jam Operasional</dt>
+                            <dd class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Senin - Jumat: 08:00 - 17:00</p>
+                                    <p class="text-gray-400 text-sm">Sabtu: 08:00 - 12:00</p>
+                                </div>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-gray-500 text-sm">&copy; 2025 PT. Mokko Otomasi Indonesia. Hak Cipta Dilindungi.</p>
+                    </div>
+                    
+                    <nav class="flex flex-wrap justify-center gap-4" aria-label="Footer links">
+                        <a href="privacy-policy.html" class="text-gray-500 hover:text-white text-sm transition duration-300">Kebijakan Privasi</a>
+                        <a href="terms-of-service.html" class="text-gray-500 hover:text-white text-sm transition duration-300">Syarat & Ketentuan</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container -->
+    <div id="notification-container" role="alert" aria-live="assertive"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // DOM Elements
+        const newsletterForm = document.getElementById('newsletter-form');
+        const pdfButton = document.getElementById('download-pdf');
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileNavClose = document.getElementById('mobile-nav-close');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+
+        // Initialize on DOM Load
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMobileNavigation();
+            initializeFAQToggle();
+            initializePDFExport();
+            initializeMap();
+            initializeFormValidation();
+            initializeErrorHandling();
+        });
+
+        // Mobile Navigation Functions
+        function initializeMobileNavigation() {
+            mobileMenuToggle.addEventListener('click', toggleMobileNav);
+            mobileNavClose.addEventListener('click', closeMobileNav);
+            mobileNavOverlay.addEventListener('click', closeMobileNav);
+
+            // Mobile dropdown toggles
+            const dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const dropdownId = this.getAttribute('data-dropdown');
+                    const dropdown = document.getElementById(dropdownId);
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    
+                    // Close all other dropdowns
+                    document.querySelectorAll('.mobile-dropdown').forEach(d => {
+                        d.classList.remove('active');
+                    });
+                    document.querySelectorAll('.mobile-dropdown-toggle').forEach(t => {
+                        t.setAttribute('aria-expanded', 'false');
+                        t.classList.remove('active');
+                    });
+                    
+                    // Toggle this dropdown
+                    if (!isExpanded) {
+                        dropdown.classList.add('active');
+                        this.setAttribute('aria-expanded', 'true');
+                        this.classList.add('active');
+                    }
+                });
+            });
+        }
+
+        function toggleMobileNav() {
+            const isOpen = mobileNav.classList.contains('active');
+            mobileNav.classList.toggle('active');
+            mobileNavOverlay.classList.toggle('active');
+            document.body.style.overflow = isOpen ? '' : 'hidden';
+            mobileMenuToggle.setAttribute('aria-expanded', !isOpen);
+        }
+
+        function closeMobileNav() {
+            mobileNav.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        // PDF Export Functions
+        function initializePDFExport() {
+            pdfButton.addEventListener('click', generatePDF);
+        }
+
+        async function generatePDF() {
+            const originalText = pdfButton.innerHTML;
+            
+            // Show loading state
+            pdfButton.innerHTML = '<span class="spinner" aria-label="Loading"></span> Membuat PDF...';
+            pdfButton.disabled = true;
+            
+            try {
+                // Load required libraries
+                await loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js');
+                await loadScript('https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js');
+                
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF('p', 'mm', 'a4');
+                
+                // Add header
+                doc.setFontSize(20);
+                doc.setFont('helvetica', 'bold');
+                doc.text('Kebijakan Privasi', 20, 30);
+                
+                doc.setFontSize(12);
+                doc.setFont('helvetica', 'normal');
+                doc.text('PT. Mokko Otomasi Indonesia', 20, 40);
+                doc.text('Efektif per: 1 Januari 2025', 20, 48);
+                
+                // Add line
+                doc.setDrawColor(59, 130, 246);
+                doc.setLineWidth(0.5);
+                doc.line(20, 55, 190, 55);
+                
+                // Add content sections
+                const sections = document.querySelectorAll('.content-section, .faq-section');
+                let yPosition = 70;
+                
+                for (const section of sections) {
+                    if (yPosition > 250) {
+                        doc.addPage();
+                        yPosition = 30;
+                    }
+                    
+                    const title = section.querySelector('h2, h3')?.textContent || '';
+                    const content = section.querySelector('.section-content, .faq-answer')?.textContent || '';
+                    
+                    // Add section title
+                    doc.setFontSize(14);
+                    doc.setFont('helvetica', 'bold');
+                    doc.text(title, 20, yPosition);
+                    yPosition += 10;
+                    
+                    // Add section content
+                    doc.setFontSize(10);
+                    doc.setFont('helvetica', 'normal');
+                    
+                    const splitText = doc.splitTextToSize(content, 170);
+                    doc.text(splitText, 20, yPosition);
+                    yPosition += splitText.length * 5 + 10;
+                }
+                
+                // Add footer to all pages
+                const pageCount = doc.internal.getNumberOfPages();
+                for (let i = 1; i <= pageCount; i++) {
+                    doc.setPage(i);
+                    
+                    doc.setFontSize(8);
+                    doc.setFont('helvetica', 'normal');
+                    doc.text(`Halaman ${i} dari ${pageCount}`, 20, 287);
+                    doc.text('PT. Mokko Otomasi Indonesia - www.mokko.co.id', 190, 287, { align: 'right' });
+                    
+                    doc.setDrawColor(200, 200, 200);
+                    doc.setLineWidth(0.1);
+                    doc.line(20, 283, 190, 283);
+                }
+                
+                // Save PDF
+                doc.save('kebijakan-privasi-pt-mokko-otomasi-indonesia.pdf');
+                
+                showNotification('PDF berhasil diunduh!', 'success');
+                
+            } catch (error) {
+                console.error('Error generating PDF:', error);
+                showNotification('Gagal menghasilkan PDF. Silakan coba lagi.', 'error');
+            } finally {
+                // Restore button
+                pdfButton.innerHTML = originalText;
+                pdfButton.disabled = false;
+            }
+        }
+
+        function loadScript(src) {
+            return new Promise((resolve, reject) => {
+                if (document.querySelector(`script[src="${src}"]`)) {
+                    resolve();
+                    return;
+                }
+                
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
+
+        // Form Validation Functions
+        function initializeFormValidation() {
+            newsletterForm.addEventListener('submit', handleNewsletterSubmit);
+        }
+
+        function handleNewsletterSubmit(e) {
+            e.preventDefault();
+            const email = e.target.querySelector('input[type="email"]').value;
+            const messageElement = document.getElementById('newsletter-message');
+            
+            if (isValidEmail(email)) {
+                showNotification('Terima kasih! Anda telah berhasil berlangganan newsletter kami.', 'success');
+                e.target.reset();
+                messageElement.textContent = 'Berhasil berlangganan newsletter!';
+                messageElement.classList.remove('hidden');
+                
+                // In real implementation: save to newsletter service
+                console.log('Newsletter subscription:', email);
+            } else {
+                showNotification('Mohon masukkan email yang valid.', 'error');
+                messageElement.textContent = 'Email tidak valid. Mohon periksa kembali.';
+                messageElement.classList.remove('hidden');
+            }
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageElement.classList.add('hidden');
+            }, 5000);
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Map Functions
+        function initializeMap() {
+            const mapElement = document.getElementById('map');
+            if (!mapElement) return;
+            
+            try {
+                const map = L.map('map').setView([-6.9807882439533, 112.54502960571443], 15);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+                
+                const mokkoIcon = L.divIcon({
+                    html: '<div class="bg-blue-900 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">M</div>',
+                    iconSize: [40, 40],
+                    className: 'custom-div-icon'
+                });
+                
+                L.marker([-6.9807882439533, 112.54502960571443], { icon: mokkoIcon })
+                    .addTo(map)
+                    .bindPopup('<b>PT. Mokko Otomasi Indonesia</b><br>Jl. Raya Deandles Golokan Sidayu, Gresik')
+                    .openPopup();
+            } catch (error) {
+                console.error('Map initialization error:', error);
+            }
+        }
+
+        // Notification Functions
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.setAttribute('role', 'alert');
+            notification.textContent = message;
+            
+            document.getElementById('notification-container').appendChild(notification);
+            
+            // Trigger animation
+            setTimeout(() => notification.classList.add('show'), 10);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        // FAQ Toggle
+        function initializeFAQToggle() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const isActive = faqItem.classList.contains('active');
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    
+                    // Close all FAQ items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                        this.setAttribute('aria-expanded', 'true');
+                    }
+                });
+                
+                // Add keyboard support
+                question.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+        }
+
+        // Error Handling
+        function initializeErrorHandling() {
+            window.addEventListener('error', function(e) {
+                console.error('Global error:', e.error);
+                showNotification('Terjadi kesalahan. Silakan refresh halaman.', 'error');
+            });
+            
+            window.addEventListener('unhandledrejection', function(e) {
+                console.error('Unhandled promise rejection:', e.reason);
+                showNotification('Terjadi kesalahan. Silakan coba lagi.', 'error');
+            });
+        }
+    </script>
+</body>
+</html>

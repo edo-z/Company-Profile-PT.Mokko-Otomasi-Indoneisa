@@ -1,0 +1,3319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="PT. Mokko Otomasi Indonesia menyediakan solusi otomasi industri dengan teknologi IoT untuk meningkatkan efisiensi hingga 25%. Dukungan 24/7 dan solusi lokal terpercaya.">
+    <meta name="keywords" content="otomasi industri, IoT, PLC, SCADA, conveyor, robot, solusi otomasi, Mokko, Indonesia">
+    <meta name="author" content="PT. Mokko Otomasi Indonesia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mokko.co.id/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PT. Mokko Otomasi Indonesia | Solusi Otomasi Industri Terdepan">
+    <meta property="og:description" content="PT. Mokko Otomasi Indonesia menyediakan solusi otomasi industri dengan teknologi IoT untuk meningkatkan efisiensi hingga 25%.">
+    <meta property="og:image" content="https://www.mokko.co.id/images/og-image.jpg">
+    <meta property="og:url" content="https://www.mokko.co.id/">
+    <meta property="og:site_name" content="PT. Mokko Otomasi Indonesia">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PT. Mokko Otomasi Indonesia | Solusi Otomasi Industri Terdepan">
+    <meta name="twitter:description" content="PT. Mokko Otomasi Indonesia menyediakan solusi otomasi industri dengan teknologi IoT untuk meningkatkan efisiensi hingga 25%.">
+    <meta name="twitter:image" content="https://www.mokko.co.id/images/og-image.jpg">
+    <meta name="twitter:site" content="@mokko_indonesia">
+    
+    <!-- Cookie consent meta tags -->
+    <meta http-equiv="Set-Cookie" content="SameSite=None; Secure">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PT. Mokko Otomasi Indonesia",
+        "url": "https://www.mokko.co.id",
+        "logo": "https://www.mokko.co.id/images/logos/mokkologo.png",
+        "description": "PT. Mokko Otomasi Indonesia menyediakan solusi otomasi industri dengan teknologi IoT untuk meningkatkan efisiensi hingga 25%.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Raya Deandles Golokan Sidayu",
+            "addressLocality": "Gresik",
+            "addressRegion": "Jawa Timur",
+            "postalCode": "61153",
+            "addressCountry": "Indonesia"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-31-99113264",
+            "contactType": "customer service",
+            "email": "sales@mokko.co.id"
+        },
+        "sameAs": [
+            "https://www.facebook.com/mokkoindonesia",
+            "https://www.twitter.com/mokko_indonesia",
+            "https://www.linkedin.com/company/mokko-otomasi-indonesia"
+        ]
+    }
+    </script>
+    
+    <title>PT. Mokko Otomasi Indonesia | Solusi Otomasi Industri Terdepan</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!--Icon Website-->
+    <link rel="icon" href="images/fevicon/icon.png" type="image/gif">
+    
+    <!-- Leaflet CSS for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    
+    <style>
+        /* Custom CSS with enhanced styling */
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --accent-color: #60a5fa;
+    --light-color: #f3f4f6;
+    --dark-color: #1f2937;
+    --gradient-1: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    --gradient-2: linear-gradient(135deg, #60a5fa, #93c5fd);
+}
+
+/* Enhanced scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body background pattern */
+body {
+    background-color: #f9fafb;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(215.00, 73%, 97%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+}
+
+/* Enhanced header with glass effect */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* Logo enhancement */
+.logo {
+    background: var(--gradient-1);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+}
+
+/* Navbar Styles */
+.navbar {
+    position: relative;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-1);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+.nav-link i {
+    margin-left: 0.25rem;
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown Styles - PERBAIKAN UTAMA */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 280px;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    margin-top: 0.5rem;
+    display: block; /* Tambahkan ini */
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    color: #4b5563;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.dropdown-content a:hover {
+    background: rgba(59, 130, 246, 0.05);
+    color: var(--primary-color);
+    padding-left: 1.5rem;
+}
+
+.dropdown-content a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 0;
+    background: var(--gradient-1);
+    transform: translateY(-50%);
+    transition: height 0.3s ease;
+}
+
+.dropdown-content a:hover::before {
+    height: 70%;
+}
+
+/* Sub-dropdown Styles - PERBAIKAN UTAMA */
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 220px;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    margin-left: 0.5rem;
+    display: block; /* Tambahkan ini */
+}
+
+.sub-dropdown:hover .sub-dropdown-content,
+.sub-dropdown.active .sub-dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.sub-dropdown-content a {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+}
+
+.category {
+    justify-content: space-between;
+}
+
+.category i {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+/* Enhanced hero section with video background */
+#home {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Video Background Styling */
+#home .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#home .video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* Video overlay for text readability */
+#home .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+    z-index: 1;
+}
+
+/* Hero Section Enhancements */
+@keyframes float1 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    33% { transform: translateY(-20px) translateX(10px); }
+    66% { transform: translateY(10px) translateX(-10px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    33% { transform: translateY(-15px) translateX(-15px); }
+    66% { transform: translateY(15px) translateX(15px); }
+}
+
+@keyframes float3 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-25px) translateX(5px); }
+}
+
+@keyframes float4 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-10px) translateX(-5px); }
+}
+
+.animate-float1 {
+    animation: float1 8s ease-in-out infinite;
+}
+
+.animate-float2 {
+    animation: float2 10s ease-in-out infinite;
+}
+
+.animate-float3 {
+    animation: float3 12s ease-in-out infinite;
+}
+
+.animate-float4 {
+    animation: float4 9s ease-in-out infinite;
+}
+
+.bg-grid-pattern {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Counter Animation */
+.counter {
+    display: inline-block;
+}
+
+/* Enhanced CTA Button */
+.cta-button {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    color: white;
+    font-weight: bold;
+    padding: 0.875rem 2rem;
+    border-radius: 0.75rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.5s;
+    z-index: -1;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+/* Enhanced feature cards */
+.feature-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.15);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    background: var(--gradient-2);
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
+}
+
+/* Enhanced project cards */
+.project-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 58, 138, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Enhanced partner logos */
+.partner-logo {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+/* Enhanced Gallery Styles */
+.gallery-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.gallery-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
+}
+
+.gallery-card img {
+    transition: transform 0.7s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), transparent);
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.gallery-nav:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-nav.prev {
+    left: 1rem;
+}
+
+.gallery-nav.next {
+    right: 1rem;
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+}
+
+.gallery-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Enhanced form styling */
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Enhanced footer */
+footer {
+    background: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--gradient-1);
+}
+
+/* Custom map marker */
+.custom-div-icon {
+    background: none;
+    border: none;
+}
+
+/* Enhanced map container */
+#map {
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+/* Leaflet popup styling */
+.leaflet-popup-content-wrapper {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-content {
+    margin: 15px;
+    font-family: inherit;
+}
+
+.leaflet-popup-tip {
+    background: white;
+}
+
+/* Enhanced mobile menu toggle - PERBAIKAN UTAMA */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+    position: relative;
+    min-height: 44px;
+    min-width: 44px;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.mobile-menu-toggle:active {
+    background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Loading animation */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f4f6;
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-1);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    z-index: 99;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+}
+
+/* WhatsApp Floating Button Styles */
+.whatsapp-container {
+    transition: all 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-button {
+    width: 50px !important;
+    height: 50px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.whatsapp-button i {
+    font-size: 1.25rem !important;
+}
+
+.whatsapp-button:hover {
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.whatsapp-button:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+.whatsapp-button::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background: linear-gradient(45deg, #25d366, #128c7e, #25d366);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: blur(10px);
+}
+
+.whatsapp-button:hover::after {
+    opacity: 0.7;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.whatsapp-pulse {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.1;
+        transform: scale(1.2);
+    }
+}
+
+.whatsapp-tooltip {
+    pointer-events: none;
+}
+
+/* Notification Badge */
+.notification-badge {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0.7rem !important;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Chat Bubble Styles */
+.chat-bubble {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.chat-bubble.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.chat-bubble .flex-shrink-0 {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.chat-bubble .flex-shrink-0 i {
+    font-size: 1.25rem !important;
+}
+
+/* Enhanced section titles */
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--gradient-1);
+    border-radius: 2px;
+}
+
+/* Enhanced badges */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--gradient-2);
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(96, 165, 250, 0.3);
+}
+
+/* Lightbox effect for gallery images */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex;
+    opacity: 1;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.lightbox.active img {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.lightbox-close:hover {
+    transform: rotate(90deg);
+}
+
+/* Navigasi Dot Styles */
+.nav-dot {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-dot:hover span {
+    opacity: 1;
+}
+
+.nav-dot.bg-blue-600 {
+    transform: scale(1.2);
+}
+
+/* Mobile Responsiveness - PERBAIKAN UTAMA */
+@media (max-width: 1024px) {
+    /* Show mobile menu toggle on tablets and smaller */
+    .mobile-menu-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Hide desktop navigation */
+    .navbar {
+        display: none;
+    }
+    
+    /* Mobile navigation styles */
+    .mobile-navbar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        z-index: 999;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .mobile-navbar.active {
+        transform: translateY(0);
+    }
+    
+    .mobile-navbar-content {
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+        padding: 1rem 0;
+    }
+    
+    .mobile-nav-item {
+        width: 100%;
+    }
+    
+    .mobile-nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        color: #4b5563;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid #f3f4f6;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-link:hover {
+        color: var(--primary-color);
+        background: rgba(59, 130, 246, 0.05);
+    }
+    
+    .mobile-dropdown-content {
+        display: none;
+        background: #f9fafb;
+        padding: 0;
+    }
+    
+    .mobile-dropdown.active .mobile-dropdown-content {
+        display: block;
+    }
+    
+    .mobile-sub-dropdown-content {
+        display: none;
+        background: #f3f4f6;
+        padding-left: 1.5rem;
+    }
+    
+    .mobile-sub-dropdown.active .mobile-sub-dropdown-content {
+        display: block;
+    }
+    
+    .mobile-dropdown-content a,
+    .mobile-sub-dropdown-content a {
+        display: block;
+        padding: 0.75rem 1.5rem;
+        color: #4b5563;
+        text-decoration: none;
+        font-size: 0.875rem;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-dropdown-content a:hover,
+    .mobile-sub-dropdown-content a:hover {
+        color: var(--primary-color);
+        background: rgba(59, 130, 246, 0.05);
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding: 6rem 0 4rem;
+        min-height: auto;
+    }
+    
+    .whatsapp-container {
+        bottom: 5rem;
+        left: 1rem;
+    }
+    
+    .whatsapp-button {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    .whatsapp-button i {
+        font-size: 1.1rem !important;
+    }
+    
+    .notification-badge {
+        width: 18px !important;
+        height: 18px !important;
+        font-size: 0.65rem !important;
+    }
+    
+    .whatsapp-pulse {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    .whatsapp-tooltip {
+        display: none;
+    }
+    
+    .gallery-nav {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .gallery-nav.prev {
+        left: 0.5rem;
+    }
+    
+    .gallery-nav.next {
+        right: 0.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .stats-item {
+        text-align: center;
+    }
+    
+    .stats-number {
+        font-size: 1.5rem;
+    }
+    
+    .stats-label {
+        font-size: 0.75rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-button, .secondary-button {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .feature-grid, .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    #map {
+        height: 200px;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Fix for touch targets */
+    .nav-link:active,
+    .mobile-menu-toggle:active,
+    .mobile-nav-link:active {
+        background-color: rgba(59, 130, 246, 0.1);
+    }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #home {
+        padding: 8rem 0 6rem;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        margin-bottom: 2rem;
+    }
+    
+    .feature-grid, .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .partner-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+<!-- WhatsApp Floating Button dengan Ukuran Sama dengan Scroll Up -->
+<div class="whatsapp-container fixed bottom-28 left-8 z-50 md:bottom-28 md:left-8">
+    <!-- Pulse Animation Background -->
+    <div class="whatsapp-pulse absolute inset-0 bg-green-500 rounded-full opacity-30 animate-ping"></div>
+    
+    <!-- Main Button -->
+    <a href="https://wa.me/628999910551?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Anda" 
+       class="whatsapp-button relative flex items-center justify-center w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl group md:w-12 md:h-12"
+       target="_blank"
+       aria-label="Hubungi kami via WhatsApp">
+        <!-- Icon WhatsApp -->
+        <svg class="w-6 h-6 text-white transform transition-transform duration-300 group-hover:rotate-15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        
+        <!-- Tooltip -->
+        <div class="whatsapp-tooltip absolute left-full ml-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible whitespace-nowrap">
+            <span class="text-sm font-medium">Hubungi Kami</span>
+            <div class="absolute right-full top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-r-8 border-r-gray-800"></div>
+        </div>
+    </a>
+    
+    <!-- Notification Badge (Optional) -->
+    <div id="notificationBadge" class="notification-badge absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shadow-md animate-bounce">
+        1
+    </div>
+</div>
+
+<!-- Chat Bubble Animation (Muncul setelah beberapa detik) -->
+<div id="chatBubble" class="chat-bubble fixed bottom-28 left-8 bg-white rounded-lg shadow-2xl p-4 max-w-xs transform translate-y-10 opacity-0 transition-all duration-500 z-40 md:bottom-28 md:left-8">
+    <div class="flex items-start">
+        <div class="flex-shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </div>
+        <div class="ml-3">
+            <p class="text-gray-800 text-sm font-medium">Halo! Ada yang bisa kami bantu?</p>
+            <div class="mt-2 flex space-x-2">
+                <button id="closeChatBubble" class="text-gray-500 text-sm font-medium hover:text-gray-700">
+                    Tutup
+                </button>
+                <a href="https://wa.me/628999910551?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Anda" 
+                   target="_blank"
+                   class="text-green-600 text-sm font-medium hover:text-green-700">
+                    Chat Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-0 left-6 transform translate-y-full">
+        <div class="w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white"></div>
+    </div>
+</div>
+    
+    <!-- Cookie Consent Banner -->
+<div id="cookieConsent" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 transform transition-transform duration-300 translate-y-full">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+        <div class="mb-4 md:mb-0 md:mr-4">
+            <p class="text-sm">Website ini menggunakan cookie untuk pengalaman pengguna yang lebih baik. Dengan melanjutkan, Anda menyetujui penggunaan cookie kami.</p>
+        </div>
+        <div class="flex space-x-3">
+            <button id="acceptCookies" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition">
+                Terima Semua
+            </button>
+            <button id="rejectCookies" class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition">
+                Tolak Non-Esensial
+            </button>
+            <button id="cookieSettings" class="text-gray-300 hover:text-white px-4 py-2 rounded-lg text-sm transition">
+                Pengaturan
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div id="cookieSettingsModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-md w-full p-6">
+        <h3 class="text-xl font-bold mb-4">Pengaturan Cookie</h3>
+        <div class="space-y-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="font-semibold">Cookie Esensial</h4>
+                    <p class="text-sm text-gray-600">Diperlukan untuk website berfungsi dengan baik</p>
+                </div>
+                <input type="checkbox" checked disabled class="w-5 h-5 text-blue-600">
+            </div>
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="font-semibold">Cookie Analitik</h4>
+                    <p class="text-sm text-gray-600">Membantu kami memahami bagaimana Anda menggunakan website</p>
+                </div>
+                <input type="checkbox" id="analyticsCookies" class="w-5 h-5 text-blue-600">
+            </div>
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="font-semibold">Cookie Pemasaran</h4>
+                    <p class="text-sm text-gray-600">Digunakan untuk menampilkan iklan yang relevan</p>
+                </div>
+                <input type="checkbox" id="marketingCookies" class="w-5 h-5 text-blue-600">
+            </div>
+        </div>
+        <div class="flex space-x-3 mt-6">
+            <button id="saveCookieSettings" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition flex-1">
+                Simpan Pengaturan
+            </button>
+            <button id="closeCookieSettings" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-lg text-sm transition flex-1">
+                Tutup
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://mokkoproject.biz.id/mokko/assets/img/mokkologo.png" alt="logo" class="h-12">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="navbar hidden lg:block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/about.html" class="nav-link">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="pages/products.html" class="nav-link">
+                                Produk <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="sub-dropdown">
+                                    <a href="pages/products.html" class="category">
+                                        Automation <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <div class="sub-dropdown-content">
+                                        <a href="pages/products.html">PLC</a>
+                                        <a href="pages/products.html">HMI</a>
+                                        <a href="pages/products.html">Servo</a>
+                                        <a href="pages/products.html">Inverter</a>
+                                        <a href="pages/products.html">SCADA</a>
+                                        <a href="pages/products.html">Robot</a>
+                                        <a href="pages/products.html">Upgrade Machine System</a>
+                                    </div>
+                                </div>
+                                <div class="sub-dropdown">
+                                    <a href="pages/products.html#conveyor" class="category">
+                                        Conveyor <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <div class="sub-dropdown-content">
+                                        <a href="pages/products.html#flat-belt">Flat Belt</a>
+                                        <a href="pages/products.html#top-table">Top Table Chain</a>
+                                        <a href="pages/products.html#modular">Modular</a>
+                                        <a href="pages/products.html#wire-mash">Wire Mash</a>
+                                        <a href="pages/products.html#packaging">Packaging</a>
+                                        <a href="pages/products.html#palletizing">Palletizing</a>
+                                        <a href="pages/products.html#roller">Roller Conveyor</a>
+                                    </div>
+                                </div>
+                                <div class="sub-dropdown">
+                                    <a href="pages/products.html" class="category">
+                                        Internet of Things (IoT)
+                                    </a>
+                                </div>
+                                <div class="sub-dropdown">
+                                    <a href="pages/products.html" class="category">
+                                        Instrumentations <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    <div class="sub-dropdown-content">
+                                        <a href="pages/products.html">Flowmeter</a>
+                                        <a href="pages/products.html">Liquid Analysis</a>
+                                        <a href="pages/products.html">Pressure Transmitter</a>
+                                        <a href="pages/products.html">Level</a>
+                                        <a href="pages/products.html">Valve</a>
+                                        <a href="pages/products.html">Gas Detector</a>
+                                        <a href="pages/products.html">Temperature</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/services.html" class="nav-link">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/projects.html" class="nav-link">Proyek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/collaboration.html" class="nav-link">Kolaborasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/partners.html" class="nav-link">Mitra</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle lg:hidden" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation - PERBAIKAN UTAMA -->
+    <nav class="mobile-navbar" id="mobile-navbar">
+        <div class="container mx-auto px-4">
+            <div class="mobile-navbar-content">
+                <ul class="space-y-0">
+                    <li class="mobile-nav-item">
+                        <a href="#home" class="mobile-nav-link">Beranda</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="pages/about.html" class="mobile-nav-link">Tentang Kami</a>
+                    </li>
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <a href="#" class="mobile-nav-link" data-toggle="dropdown">
+                            Produk <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="mobile-dropdown-content">
+                            <div class="mobile-sub-dropdown">
+                                <a href="#" class="mobile-nav-link" data-toggle="sub-dropdown">
+                                    Automation <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <div class="mobile-sub-dropdown-content">
+                                    <a href="pages/products.html">PLC</a>
+                                    <a href="pages/products.html">HMI</a>
+                                    <a href="pages/products.html">Servo</a>
+                                    <a href="pages/products.html">Inverter</a>
+                                    <a href="pages/products.html">SCADA</a>
+                                    <a href="pages/products.html">Robot</a>
+                                    <a href="pages/products.html">Upgrade Machine System</a>
+                                </div>
+                            </div>
+                            <div class="mobile-sub-dropdown">
+                                <a href="#" class="mobile-nav-link" data-toggle="sub-dropdown">
+                                    Conveyor <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <div class="mobile-sub-dropdown-content">
+                                    <a href="pages/products.html#flat-belt">Flat Belt</a>
+                                    <a href="pages/products.html#top-table">Top Table Chain</a>
+                                    <a href="pages/products.html#modular">Modular</a>
+                                    <a href="pages/products.html#wire-mash">Wire Mash</a>
+                                    <a href="pages/products.html#packaging">Packaging</a>
+                                    <a href="pages/products.html#palletizing">Palletizing</a>
+                                    <a href="pages/products.html#roller">Roller Conveyor</a>
+                                </div>
+                            </div>
+                            <div class="mobile-sub-dropdown">
+                                <a href="pages/products.html" class="mobile-nav-link">
+                                    Internet of Things (IoT)
+                                </a>
+                            </div>
+                            <div class="mobile-sub-dropdown">
+                                <a href="#" class="mobile-nav-link" data-toggle="sub-dropdown">
+                                    Instrumentations <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <div class="mobile-sub-dropdown-content">
+                                    <a href="pages/products.html">Flowmeter</a>
+                                    <a href="pages/products.html">Liquid Analysis</a>
+                                    <a href="pages/products.html">Pressure Transmitter</a>
+                                    <a href="pages/products.html">Level</a>
+                                    <a href="pages/products.html">Valve</a>
+                                    <a href="pages/products.html">Gas Detector</a>
+                                    <a href="pages/products.html">Temperature</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="pages/services.html" class="mobile-nav-link">Layanan</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="pages/projects.html" class="mobile-nav-link">Proyek</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="pages/collaboration.html" class="mobile-nav-link">Kolaborasi</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="pages/partners.html" class="mobile-nav-link">Mitra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section dengan Video Background -->
+    <section id="home" class="py-32 md:py-48 text-white relative overflow-hidden min-h-screen flex items-center">
+        <!-- Video Background YouTube -->
+        <div class="video-background">
+            <iframe 
+                src="https://www.youtube-nocookie.com/embed/0yFKaCn9soo?autoplay=1&mute=1&loop=1&playlist=0yFKaCn9soo&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <!-- Video Overlay -->
+        <div class="video-overlay"></div>
+        
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <!-- Floating Elements -->
+            <div class="absolute top-20 left-10 w-16 h-16 bg-blue-500 rounded-full opacity-20 animate-float1"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-blue-600 rounded-full opacity-10 animate-float2"></div>
+            <div class="absolute bottom-20 left-1/4 w-20 h-20 bg-blue-700 rounded-full opacity-15 animate-float3"></div>
+            <div class="absolute bottom-40 right-1/3 w-12 h-12 bg-blue-800 rounded-full opacity-20 animate-float4"></div>
+            
+            <!-- Grid Pattern -->
+            <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 flex justify-center items-center relative z-10 w-full hero-content">
+            <div class="max-w-4xl text-center hero-text" data-aos="fade-up">
+                
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                    Transformasi <span class="text-blue-300">Industri</span> dengan Teknologi <span class="text-blue-300">Otomasi</span>
+                </h1>
+                
+                <p class="text-base md:text-lg mb-8 text-blue-100 max-w-2xl mx-auto">
+                    Meningkatkan efisiensi operasional hingga 40% dengan solusi IoT dan otomasi industri terdepan dari Mokko.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 mb-10 justify-center cta-buttons">
+                    <button class="cta-button group">
+                        <span class="relative z-10">Konsultasi Gratis</span>
+                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    <a href="#projects" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-900 transition duration-300 flex items-center justify-center secondary-button">
+                        <i class="fas fa-folder-open mr-2"></i> Lihat Proyek
+                    </a>
+                </div>
+                
+                <!-- Stats Counter -->
+                <div class="grid grid-cols-4 gap-4 md:gap-6 mt-10 stats-grid">
+                    <div class="stats-item">
+                        <div class="text-2xl md:text-3xl font-bold mb-1 stats-number">
+                            <span class="counter" data-target="150">0</span>+
+                        </div>
+                        <div class="text-blue-200 text-xs md:text-sm stats-label">Proyek Selesai</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="text-2xl md:text-3xl font-bold mb-1 stats-number">
+                            <span class="counter" data-target="100">0</span>+
+                        </div>
+                        <div class="text-blue-200 text-xs md:text-sm stats-label">Suskes Berkolaborasi</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="text-2xl md:text-3xl font-bold mb-1 stats-number">
+                            <span class="counter" data-target="98">0</span>%
+                        </div>
+                        <div class="text-blue-200 text-xs md:text-sm stats-label">Kepuasan Klien</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="text-2xl md:text-3xl font-bold mb-1 stats-number">
+                            <span class="counter" data-target="24">0</span>/7
+                        </div>
+                        <div class="text-blue-200 text-xs md:text-sm stats-label">Dukungan Teknis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sidebar Navigasi Section -->
+    <div class="fixed left-0 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
+        <div class="bg-white shadow-lg rounded-r-lg p-2">
+            <ul class="space-y-3">
+                <li>
+                    <a href="#home" class="nav-dot block w-3 h-3 bg-gray-300 rounded-full hover:bg-blue-600 transition-all duration-300" data-section="home">
+                        <span class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-l px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity whitespace-nowrap">Beranda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/about.html" class="nav-dot block w-3 h-3 bg-gray-300 rounded-full hover:bg-blue-600 transition-all duration-300" data-section="about">
+                        <span class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-l px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity whitespace-nowrap">Tentang Kami</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-dot block w-3 h-3 bg-gray-300 rounded-full hover:bg-blue-600 transition-all duration-300" data-section="services">
+                        <span class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-l px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity whitespace-nowrap">Layanan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-dot block w-3 h-3 bg-gray-300 rounded-full hover:bg-blue-600 transition-all duration-300" data-section="projects">
+                        <span class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-l px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity whitespace-nowrap">Proyek</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#collaboration" class="nav-dot block w-3 h-3 bg-gray-300 rounded-full hover:bg-blue-600 transition-all duration-300" data-section="collaboration">
+                        <span class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-l px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity whitespace-nowrap">Kolaborasi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#partners" class="nav-dot block w-3 h-3 bg-gray-300 rounded-full hover:bg-blue-600 transition-all duration-300" data-section="partners">
+                        <span class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-l px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity whitespace-nowrap">Mitra</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up">
+                <h2 class="section-title text-2xl md:text-3xl font-bold">Tentang PT. Mokko Otomasi Indonesia</h2>
+                <p class="text-gray-600 mt-6 text-sm md:text-base">Kami adalah perusahaan terdepan dalam menyediakan solusi otomasi industri yang inovatif dan efisien untuk berbagai sektor di Indonesia.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto feature-grid">
+                <div class="feature-card text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Teknologi Terkini</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Menggunakan teknologi otomasi terbaru untuk memberikan solusi yang paling efektif bagi bisnis Anda.</p>
+                </div>
+                
+                <div class="feature-card text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Tim Ahli</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Didukung oleh tim profesional berpengalaman di bidang otomasi industri dan teknologi informasi.</p>
+                </div>
+                
+                <div class="feature-card text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Komitmen Pelanggan</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Kami berkomitmen untuk memberikan layanan terbaik dan solusi yang disesuaikan dengan kebutuhan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up">
+                <h2 class="section-title text-2xl md:text-3xl font-bold">Layanan Kami</h2>
+                <p class="text-gray-600 mt-6 text-sm md:text-base">Kami menyediakan berbagai layanan otomasi industri untuk memenuhi kebutuhan bisnis Anda.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+                <div class="feature-card text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Sistem Kontrol & Industrial Automation</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Implementasi sistem kontrol otomatis untuk berbagai proses industri.</p>
+                </div>
+                
+                <div class="feature-card text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">IoT Integration</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Integrasi Internet of Things untuk monitoring dan analisis data real-time.</p>
+                </div>
+                
+                <div class="feature-card text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Industrial Machine Maker</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Kami menyediakan layanan pembuatan sistem mesin untuk sektor industri, infrastruktur dan bangunan</p>
+                </div>
+                
+                <div class="feature-card text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Dukungan Teknis, Maintenance, & Troubleshooting</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Layanan dukungan teknis 24/7 untuk memastikan sistem berjalan optimal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up">
+                <h2 class="section-title text-2xl md:text-3xl font-bold">Project Referensi</h2>
+                <p class="text-gray-600 mt-6 text-sm md:text-base">Berbagai proyek sukses yang telah kami kerjakan untuk klien dari berbagai industri.</p>
+            </div>
+            
+            <!-- Project Gallery Slideshow -->
+            <div class="max-w-6xl mx-auto mb-8 md:mb-12" data-aos="fade-up">
+                <div class="gallery-container relative overflow-hidden rounded-2xl shadow-2xl">
+                    <div id="project-gallery-slider" class="gallery-slider flex transition-transform duration-700 ease-in-out">
+                        <!-- Project Gallery Slide 1 -->
+                        <div class="gallery-slide min-w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 p-4">
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipPDNTrXqrfCCJHKcs-0jby0L7_oIc1uhNiY8cmK=s1360-w1360-h1020" alt="Project Gallery 1" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">Manufaktur</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2023</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Sistem Otomasi Pabrik Makanan</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Implementasi sistem otomasi lengkap dengan conveyor dan robot packaging</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">PLC</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">SCADA</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipNcTzQUgW9QKCqtYJFn7cV0w0Pl2hQQRRRNy2ju=s1360-w1360-h1020" alt="Project Gallery 2" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded-full">Kimia</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2023</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Sistem Kontrol SCADA</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Monitoring real-time untuk proses industri kimia</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">SCADA</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">IoT</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project Gallery Slide 2 -->
+                        <div class="gallery-slide min-w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 p-4">
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npbGX5Hx-wlRGM2WjvfFlme7qXVpKqV3-idpm914WlPj6GA9WnEgQWhiF9sRYEIg3uebmxtkucN2wzEB5mLvIxP4ZX7N5VopnDNbapYoieMtdn1JdrR1DY60dmKlcr-9fYGD9G0IQ=s1360-w1360-h1020" alt="Project Gallery 3" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded-full">Logistik</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2023</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Robot Palletizing</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Sistem otomatisasi untuk palletizing produk di gudang</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Robot</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Automasi</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipMH5CXMQ0tuXZA9QUmi5pm9iW422ath6kUW2Yxr=s1360-w1360-h1020" alt="Project Gallery 4" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-orange-600 text-white text-xs px-2 py-1 rounded-full">Manufaktur</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2023</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Sistem Conveyor Modular</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Solusi conveyor fleksibel untuk berbagai aplikasi industri</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Conveyor</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Modular</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project Gallery Slide 3 -->
+                        <div class="gallery-slide min-w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 p-4">
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipPDNTrXqrfCCJHKcs-0jby0L7_oIc1uhNiY8cmK=s1360-w1360-h1020" alt="Project Gallery 5" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-red-600 text-white text-xs px-2 py-1 rounded-full">Minuman</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2023</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Sistem Filling Otomatis</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Mesin filling cairan dengan kontrol presisi tinggi</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Filling</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Presisi</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipPBvIKgsmOIeV3VsHe98M4tFT2KydLJMzXlUXgd=s1360-w1360-h1020" alt="Project Gallery 6" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-teal-600 text-white text-xs px-2 py-1 rounded-full">IoT</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2023</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Integrasi IoT Industri</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Sensor dan monitoring IoT untuk optimasi proses produksi</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">IoT</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Sensor</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced Navigation Arrows -->
+                    <div id="project-gallery-prev" class="gallery-nav prev left-4 bg-white/90 hover:bg-white text-blue-900 shadow-lg">
+                        <i class="fas fa-chevron-left text-xl"></i>
+                    </div>
+                    <div id="project-gallery-next" class="gallery-nav next right-4 bg-white/90 hover:bg-white text-blue-900 shadow-lg">
+                        <i class="fas fa-chevron-right text-xl"></i>
+                    </div>
+                    
+                    <!-- Slide Counter -->
+                    <div class="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm z-10">
+                        <span id="project-slide-counter">1 / 3</span>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Navigation Dots -->
+                <div id="project-gallery-dots" class="gallery-dots mt-6">
+                    <span class="gallery-dot active w-3 h-3 bg-blue-900 rounded-full cursor-pointer transition-all duration-300" data-slide="0"></span>
+                    <span class="gallery-dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer transition-all duration-300" data-slide="1"></span>
+                    <span class="gallery-dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer transition-all duration-300" data-slide="2"></span>
+                </div>
+            </div>
+            
+            <!-- Project Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto project-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNPIdYDlL8j6a2PDwJT5lT1roycvH2hVfWgD9Zd=s1360-w1360-h1020" alt="Proyek 1" class="w-full h-56 object-cover" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="bg-white text-blue-900 font-bold py-2 px-6 rounded-lg hover:bg-gray-100 transition">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-900 text-sm font-semibold mb-2">Industri Manufaktur</div>
+                        <h3 class="text-xl font-bold mb-3">Sistem Otomasi Lini Produksi Makanan</h3>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">Implementasi sistem otomasi lengkap untuk pabrik makanan dengan peningkatan efisiensi 30%.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge">PLC</span>
+                            <span class="badge">SCADA</span>
+                            <span class="badge">Conveyor</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNp2ZIzjVNB4c38cHvxITaxZqd6w8TcraYv3uBV=s1360-w1360-h1020" alt="Proyek 2" class="w-full h-56 object-cover" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="bg-white text-blue-900 font-bold py-2 px-6 rounded-lg hover:bg-gray-100 transition">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-900 text-sm font-semibold mb-2">Industri Farmasi</div>
+                        <h3 class="text-xl font-bold mb-3">Sistem Kemasan Otomatis</h3>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">Solusi kemasan otomatis untuk industri farmasi dengan sistem kontrol ketat dan traceability.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge">Robot</span>
+                            <span class="badge">HMI</span>
+                            <span class="badge">Packaging</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPw2orYrkJDyVJ3tlettqQE9eXCQu3C5ViH9yNh=s1360-w1360-h1020" alt="Proyek 3" class="w-full h-56 object-cover" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="bg-white text-blue-900 font-bold py-2 px-6 rounded-lg hover:bg-gray-100 transition">
+                                Lihat Detail
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-900 text-sm font-semibold mb-2">Industri Otomotif</div>
+                        <h3 class="text-xl font-bold mb-3">Sistem Palletizing Robot</h3>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">Implementasi robot palletizing untuk meningkatkan kapasitas produksi dan mengurangi error.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge">Robot</span>
+                            <span class="badge">Palletizing</span>
+                            <span class="badge">IoT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8 md:mt-12" data-aos="fade-up">
+                <button class="cta-button">
+                    <a href="project.html" >Lihat Semua Proyek</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section id="collaboration" class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up">
+                <h2 class="section-title text-2xl md:text-3xl font-bold">Kolaborasi</h2>
+                <p class="text-gray-600 mt-6 text-sm md:text-base">Bergabunglah dengan jaringan mitra kami dan kembangkan solusi otomasi industri yang inovatif bersama Mokko.</p>
+            </div>
+            
+            <!-- Collaboration Gallery -->
+            <div class="max-w-6xl mx-auto mb-8 md:mb-16" data-aos="fade-up">
+                <div class="gallery-container relative overflow-hidden rounded-2xl shadow-2xl">
+                    <div id="collaboration-gallery-slider" class="gallery-slider flex transition-transform duration-700 ease-in-out">
+                        <!-- Collaboration Gallery Slide 1 -->
+                        <div class="gallery-slide min-w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 p-4">
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://www.its.ac.id/teo/wp-content/uploads/sites/52/2025/03/OK-1-1024x577.jpg" alt="Collaboration Gallery 1" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">Kerjasama</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2024</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Penandatanganan MoU dengan ITB</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Kerjasama penelitian IoT untuk industri masa depan</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">MoU</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Riset</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://te.ftik.hangtuah.ac.id/wp-content/uploads/2024/06/KULTAM-ELEKTRO-17-1024x683.jpg" alt="Collaboration Gallery 2" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded-full">Workshop</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2024</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Workshop Otomasi Industri</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Pelatihan bersama mitra untuk peningkatan kompetensi</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Training</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Skills</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Collaboration Gallery Slide 2 -->
+                        <div class="gallery-slide min-w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 p-4">
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://te.ftik.hangtuah.ac.id/wp-content/uploads/2024/06/KULTAM-ELEKTRO-17-1024x683.jpg" alt="Collaboration Gallery 3" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded-full">Expo</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2024</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Pameran Teknologi Industri</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Partisipasi bersama mitra dalam pameran teknologi</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Exhibition</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Tech</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-card group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:shadow-2xl">
+                                    <div class="relative overflow-hidden h-64">
+                                        <img src="https://te.ftik.hangtuah.ac.id/wp-content/uploads/2024/06/KULTAM-ELEKTRO-17-1024x683.jpg" alt="Collaboration Gallery 4" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div class="gallery-overlay absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                                            <div class="flex items-center mb-2">
+                                                <span class="bg-orange-600 text-white text-xs px-2 py-1 rounded-full">Seminar</span>
+                                                <span class="ml-2 text-white text-sm"><i class="far fa-calendar-alt mr-1"></i> 2024</span>
+                                            </div>
+                                            <h3 class="text-xl font-bold text-white mb-2">Seminar Solusi Otomasi</h3>
+                                            <p class="text-gray-200 text-sm mb-3">Diskusi panel dengan pakar industri dan akademisi</p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex space-x-2">
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Seminar</span>
+                                                    <span class="bg-white/20 text-white text-xs px-2 py-1 rounded">Panel</span>
+                                                </div>
+                                                <button class="text-white hover:text-blue-300 transition">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced Navigation Arrows -->
+                    <div id="collaboration-gallery-prev" class="gallery-nav prev left-4 bg-white/90 hover:bg-white text-blue-900 shadow-lg">
+                        <i class="fas fa-chevron-left text-xl"></i>
+                    </div>
+                    <div id="collaboration-gallery-next" class="gallery-nav next right-4 bg-white/90 hover:bg-white text-blue-900 shadow-lg">
+                        <i class="fas fa-chevron-right text-xl"></i>
+                    </div>
+                    
+                    <!-- Slide Counter -->
+                    <div class="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm z-10">
+                        <span id="collaboration-slide-counter">1 / 2</span>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Navigation Dots -->
+                <div id="collaboration-gallery-dots" class="gallery-dots mt-6">
+                    <span class="gallery-dot active w-3 h-3 bg-blue-900 rounded-full cursor-pointer transition-all duration-300" data-slide="0"></span>
+                    <span class="gallery-dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer transition-all duration-300" data-slide="1"></span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto form-grid">
+                <!-- Collaboration Benefits -->
+                <div data-aos="fade-right">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6">Mengapa Berkolaborasi dengan Kami?</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="feature-icon mr-4 flex-shrink-0">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Inovasi Bersama</h4>
+                                <p class="text-gray-600 text-sm md:text-base">Kembangkan solusi otomasi terdepan dengan kombinasi keahlian kami dan ide-ide segar dari mitra.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="feature-icon mr-4 flex-shrink-0">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Jaringan Luas</h4>
+                                <p class="text-gray-600 text-sm md:text-base">Akses ke jaringan klien dan industri yang luas untuk memperluas pangsa pasar Anda.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="feature-icon mr-4 flex-shrink-0">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Pertumbuhan Bisnis</h4>
+                                <p class="text-gray-600 text-sm md:text-base">Bersama-sama menciptakan peluang baru dan mendorong pertumbuhan bisnis yang berkelanjutan.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="feature-icon mr-4 flex-shrink-0">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Dukungan Teknis</h4>
+                                <p class="text-gray-600 text-sm md:text-base">Dapatkan dukungan teknis penuh dan pelatihan dari tim ahli kami untuk memastikan kesuksesan proyek.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collaboration Form -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg" data-aos="fade-left">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6">Tertarik untuk Berkolaborasi?</h3>
+                    <p class="text-gray-600 mb-6 text-sm md:text-base">Isi formulir di bawah ini dan tim kami akan menghubungi Anda untuk membahas peluang kolaborasi.</p>
+                    
+                    <form id="collaboration-form">
+                        <div class="mb-4">
+                            <label for="company-name" class="block text-gray-700 mb-2 text-sm md:text-base">Nama Perusahaan</label>
+                            <input type="text" id="company-name" name="company-name" class="form-input" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="contact-person" class="block text-gray-700 mb-2 text-sm md:text-base">Nama Kontak</label>
+                            <input type="text" id="contact-person" name="contact-person" class="form-input" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="collaboration-email" class="block text-gray-700 mb-2 text-sm md:text-base">Email</label>
+                            <input type="email" id="collaboration-email" name="collaboration-email" class="form-input" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="collaboration-phone" class="block text-gray-700 mb-2 text-sm md:text-base">Telepon</label>
+                            <input type="tel" id="collaboration-phone" name="collaboration-phone" class="form-input" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="collaboration-interest" class="block text-gray-700 mb-2 text-sm md:text-base">Bidang Kolaborasi yang Diminati</label>
+                            <select id="collaboration-interest" name="collaboration-interest" class="form-input" required>
+                                <option value="">Pilih bidang kolaborasi</option>
+                                <option value="automation">Otomasi Industri</option>
+                                <option value="iot">Pengembangan IoT</option>
+                                <option value="conveyor">Sistem Conveyor</option>
+                                <option value="research">Penelitian & Pengembangan</option>
+                                <option value="distribution">Distribusi & Pemasaran</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="collaboration-message" class="block text-gray-700 mb-2 text-sm md:text-base">Pesan</label>
+                            <textarea id="collaboration-message" name="collaboration-message" rows="4" class="form-input" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button w-full">
+                            Kirim Permohonan Kolaborasi
+                        </button>
+                    </form>
+                    
+                    <div id="collaboration-form-message" class="mt-4 p-3 rounded-lg hidden"></div>
+                </div>
+            </div>
+            
+            <!-- Collaboration Types -->
+            <div class="mt-16 md:mt-20" data-aos="fade-up">
+                <h3 class="text-xl md:text-2xl font-bold text-center mb-8 md:mb-10">Jenis Kolaborasi</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Kemitraan Teknis</h4>
+                        <p class="text-gray-600 text-sm md:text-base">Kolaborasi dalam pengembangan dan implementasi solusi otomasi industri.</p>
+                    </div>
+                    
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Penelitian Bersama</h4>
+                        <p class="text-gray-600 text-sm md:text-base">Bekerja sama dalam riset dan pengembangan teknologi otomasi terbaru.</p>
+                    </div>
+                    
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Pendidikan & Pelatihan</h4>
+                        <p class="text-gray-600 text-sm md:text-base">Program pelatihan bersama untuk meningkatkan kompetensi SDM industri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Partners Section -->
+    <section id="partners" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                <h2 class="section-title text-2xl md:text-3xl font-bold">Mitra Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-6 text-sm md:text-base">Kami bangga telah bermitra dengan perusahaan-perusahaan terkemuka dalam menyediakan solusi otomasi industri terbaik di Indonesia.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 items-center partner-grid" data-aos="fade-up">
+                <!-- Partner 1 -->
+                <div class="flex justify-center items-center">
+                    <div class="partner-logo">
+                        <img src="https://mokkoproject.biz.id/mokko/assets/img/mitra/Mistubishi-Logo.png" alt="Partner 1" class="w-full h-auto" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Partner 2 -->
+                <div class="flex justify-center items-center">
+                    <div class="partner-logo">
+                        <img src="https://mokkoproject.biz.id/mokko/assets/img/mitra/hiraise-Logo.png" alt="Partner 2" class="w-full h-auto" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Partner 3 -->
+                <div class="flex justify-center items-center">
+                    <div class="partner-logo">
+                        <img src="https://mokkoproject.biz.id/mokko/assets/img/mitra/Advantech-Logo.png" alt="Partner 3" class="w-full h-auto" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Partner 4 -->
+                <div class="flex justify-center items-center">
+                    <div class="partner-logo">
+                        <img src="https://c40.hongcdn.com/uploads/2012/logo-!p.webp" alt="Partner 4" class="w-full h-auto" loading="lazy">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center mt-8 md:mt-12" data-aos="fade-up">
+                <p class="text-gray-600 mb-6 text-sm md:text-base">Tertarik untuk menjadi mitra kami?</p>
+                <button class="cta-button">
+                    Jadilah Partner Kami
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer Section yang Diperbaiki -->
+<footer class="py-16 bg-gray-900 text-white relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <!-- Newsletter Section -->
+        <div class="bg-gradient-to-r from-blue-800 to-blue-600 rounded-xl p-6 mb-12 shadow-2xl" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-4 md:mb-0 md:mr-6">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">Dapatkan Update Terbaru</h3>
+                    <p class="text-blue-100 text-sm md:text-base">Daftar newsletter kami untuk mendapatkan informasi terkini tentang solusi otomasi industri</p>
+                </div>
+                <form id="newsletter-form" class="flex flex-col sm:flex-row w-full md:w-auto">
+                    <input type="email" placeholder="Email Anda" required class="px-4 py-3 rounded-l-lg text-gray-900 w-full sm:w-auto mb-2 sm:mb-0 sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <button type="submit" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-r-lg hover:bg-gray-100 transition duration-300 whitespace-nowrap">
+                        <i class="fas fa-paper-plane mr-2"></i> Berlangganan
+                    </button>
+                </form>
+            </div>
+            <div id="newsletter-message" class="mt-3 text-sm text-blue-100 hidden"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center mb-6" >
+                    <p class="logo text-xl" >PT. Mokko Otomasi Indonesia</p>
+                </div>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">PT. Mokko Otomasi Indonesia menyediakan solusi otomasi industri terdepan untuk masa depan bisnis Anda dengan teknologi IoT dan sistem kontrol yang inovatif.</p>
+                
+                <!-- Social Media -->
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/mokkoindonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300 group">
+                        <i class="fab fa-facebook-f text-white group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/mokko-otomasi-indonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300 group">
+                        <i class="fab fa-linkedin-in text-white group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mokko_indonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300 group">
+                        <i class="fab fa-instagram text-white group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/mokkoindonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300 group">
+                        <i class="fab fa-youtube text-white group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-blue-500">Tautan Cepat</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="index.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Beranda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/about.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Tentang Kami
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/products.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Produk
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/services.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Layanan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/project.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Proyek
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/collaboration.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Kolaborasi
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Services -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-blue-500">Layanan Kami</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="pages/services.html#automation" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Sistem Kontrol & Automation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/services.html#iot" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            IoT Integration
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/services.html#machine" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Industrial Machine Maker
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/services.html#support" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Dukungan Teknis 24/7
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/services.html#maintenance" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                            <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                            Maintenance & Troubleshooting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-blue-500">Hubungi Kami</h3>
+                
+                <!-- Map -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg mb-6 h-48 relative">
+                    <div id="map" class="w-full h-full"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                        <a href="https://maps.google.com/?q=-6.9807882439533,112.54502960571443" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition">
+                            <i class="fas fa-map-marker-alt mr-2"></i> Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Details -->
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Jl. Raya Deandles Golokan Sidayu</p>
+                            <p class="text-gray-400 text-sm">Gresik, Jawa Timur 61153</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">031-99113264</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">sales@mokko.co.id</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mr-3">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Senin - Jumat: 08:00 - 17:00</p>
+                            <p class="text-gray-400 text-sm">Sabtu: 08:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-800 mt-12 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500 text-sm">&copy; 2025 PT. Mokko Otomasi Indonesia. Hak Cipta Dilindungi.</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="pages/privacy-policy.html" class="text-gray-500 hover:text-white text-sm transition duration-300">Kebijakan Privasi</a>
+                    <a href="pages/terms-of-service.html" class="text-gray-500 hover:text-white text-sm transition duration-300">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Leaflet JS for maps -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Hide loader when page is loaded
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loader').classList.add('hidden');
+            }, 500);
+        });
+        
+        // Mobile menu toggle - PERBAIKAN UTAMA
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNavbar = document.getElementById('mobile-navbar');
+        
+        if (mobileMenuToggle && mobileNavbar) {
+            mobileMenuToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Toggle mobile navbar
+                mobileNavbar.classList.toggle('active');
+                
+                // Toggle icon animation
+                const icon = this.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+        }
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (mobileNavbar && mobileNavbar.classList.contains('active')) {
+                if (!mobileNavbar.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                    mobileNavbar.classList.remove('active');
+                    
+                    // Reset icon
+                    const icon = mobileMenuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                }
+            }
+        });
+        
+        // Mobile dropdown toggle - PERBAIKAN UTAMA
+        document.querySelectorAll('[data-toggle="dropdown"]').forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const parent = this.closest('.mobile-dropdown');
+                const allDropdowns = document.querySelectorAll('.mobile-dropdown');
+                
+                // Close other dropdowns
+                allDropdowns.forEach(dropdown => {
+                    if (dropdown !== parent) {
+                        dropdown.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current dropdown
+                parent.classList.toggle('active');
+            });
+        });
+        
+        // Mobile sub-dropdown toggle - PERBAIKAN UTAMA
+        document.querySelectorAll('[data-toggle="sub-dropdown"]').forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const parent = this.closest('.mobile-sub-dropdown');
+                const allSubDropdowns = document.querySelectorAll('.mobile-sub-dropdown');
+                
+                // Close other sub-dropdowns
+                allSubDropdowns.forEach(subDropdown => {
+                    if (subDropdown !== parent) {
+                        subDropdown.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current sub-dropdown
+                parent.classList.toggle('active');
+            });
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileNavbar && mobileNavbar.classList.contains('active')) {
+                    mobileNavbar.classList.remove('active');
+                    
+                    // Reset icon
+                    const icon = mobileMenuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling untuk navigasi utama
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active state untuk navigasi section
+        const sections = document.querySelectorAll('section[id]');
+        const navDots = document.querySelectorAll('.nav-dot');
+
+        function activateNavDot() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navDots.forEach(dot => {
+                dot.classList.remove('bg-blue-600');
+                dot.classList.add('bg-gray-300');
+                if (dot.getAttribute('data-section') === current) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-blue-600');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', activateNavDot);
+        activateNavDot(); // Initial call
+        
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 10;
+
+        counters.forEach(counter => {
+            const animate = () => {
+                const value = +counter.getAttribute('data-target');
+                const data = +counter.innerText;
+                const time = value / speed;
+                
+                if (data < value) {
+                    counter.innerText = Math.ceil(data + time);
+                    setTimeout(animate, 1);
+                } else {
+                    counter.innerText = value;
+                }
+            }
+            
+            // Start animation when element is in viewport
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animate();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            observer.observe(counter);
+        });
+        
+        // CTA button click tracking
+        const ctaButtons = document.querySelectorAll('.cta-button');
+        ctaButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // If this is the main CTA button, scroll to contact section
+                if (this.textContent.includes('Konsultasi Gratis')) {
+                    document.getElementById('collaboration').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Update slide counter
+        function updateSlideCounter(galleryId, currentSlide, totalSlides) {
+            const counter = document.getElementById(`${galleryId}-slide-counter`);
+            if (counter) {
+                counter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+            }
+        }
+
+        // Enhanced Project Gallery Slideshow
+        const projectGallerySlider = document.getElementById('project-gallery-slider');
+        const projectGallerySlides = projectGallerySlider.children;
+        const projectGalleryDots = document.querySelectorAll('#project-gallery-dots .gallery-dot');
+        const projectGalleryPrevBtn = document.getElementById('project-gallery-prev');
+        const projectGalleryNextBtn = document.getElementById('project-gallery-next');
+        let currentProjectGallerySlide = 0;
+        const projectGallerySlideCount = projectGallerySlides.length;
+
+        function updateProjectGallerySlidePosition() {
+            projectGallerySlider.style.transform = `translateX(-${currentProjectGallerySlide * 100}%)`;
+            
+            // Update dots
+            projectGalleryDots.forEach((dot, index) => {
+                if (index === currentProjectGallerySlide) {
+                    dot.classList.add('active');
+                    dot.style.background = 'var(--primary-color)';
+                } else {
+                    dot.classList.remove('active');
+                    dot.style.background = '#cbd5e1';
+                }
+            });
+            
+            // Update counter
+            updateSlideCounter('project', currentProjectGallerySlide, projectGallerySlideCount);
+        }
+
+        function nextProjectGallerySlide() {
+            currentProjectGallerySlide = (currentProjectGallerySlide + 1) % projectGallerySlideCount;
+            updateProjectGallerySlidePosition();
+        }
+
+        function prevProjectGallerySlide() {
+            currentProjectGallerySlide = (currentProjectGallerySlide - 1 + projectGallerySlideCount) % projectGallerySlideCount;
+            updateProjectGallerySlidePosition();
+        }
+
+        // Event listeners for navigation buttons
+        projectGalleryNextBtn.addEventListener('click', nextProjectGallerySlide);
+        projectGalleryPrevBtn.addEventListener('click', prevProjectGallerySlide);
+
+        // Event listeners for dots
+        projectGalleryDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentProjectGallerySlide = index;
+                updateProjectGallerySlidePosition();
+            });
+        });
+
+        // Auto-advance with pause on hover
+        let projectGalleryInterval = setInterval(nextProjectGallerySlide, 6000);
+
+        const projectGalleryContainer = document.querySelector('#project-gallery-slider').parentElement;
+        projectGalleryContainer.addEventListener('mouseenter', () => {
+            clearInterval(projectGalleryInterval);
+        });
+
+        projectGalleryContainer.addEventListener('mouseleave', () => {
+            projectGalleryInterval = setInterval(nextProjectGallerySlide, 6000);
+        });
+
+        // Enhanced Collaboration Gallery Slideshow
+        const collaborationGallerySlider = document.getElementById('collaboration-gallery-slider');
+        const collaborationGallerySlides = collaborationGallerySlider.children;
+        const collaborationGalleryDots = document.querySelectorAll('#collaboration-gallery-dots .gallery-dot');
+        const collaborationGalleryPrevBtn = document.getElementById('collaboration-gallery-prev');
+        const collaborationGalleryNextBtn = document.getElementById('collaboration-gallery-next');
+        let currentCollaborationGallerySlide = 0;
+        const collaborationGallerySlideCount = collaborationGallerySlides.length;
+
+        function updateCollaborationGallerySlidePosition() {
+            collaborationGallerySlider.style.transform = `translateX(-${currentCollaborationGallerySlide * 100}%)`;
+            
+            // Update dots
+            collaborationGalleryDots.forEach((dot, index) => {
+                if (index === currentCollaborationGallerySlide) {
+                    dot.classList.add('active');
+                    dot.style.background = 'var(--primary-color)';
+                } else {
+                    dot.classList.remove('active');
+                    dot.style.background = '#cbd5e1';
+                }
+            });
+            
+            // Update counter
+            updateSlideCounter('collaboration', currentCollaborationGallerySlide, collaborationGallerySlideCount);
+        }
+
+        function nextCollaborationGallerySlide() {
+            currentCollaborationGallerySlide = (currentCollaborationGallerySlide + 1) % collaborationGallerySlideCount;
+            updateCollaborationGallerySlidePosition();
+        }
+
+        function prevCollaborationGallerySlide() {
+            currentCollaborationGallerySlide = (currentCollaborationGallerySlide - 1 + collaborationGallerySlideCount) % collaborationGallerySlideCount;
+            updateCollaborationGallerySlidePosition();
+        }
+
+        // Event listeners for navigation buttons
+        collaborationGalleryNextBtn.addEventListener('click', nextCollaborationGallerySlide);
+        collaborationGalleryPrevBtn.addEventListener('click', prevCollaborationGallerySlide);
+
+        // Event listeners for dots
+        collaborationGalleryDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentCollaborationGallerySlide = index;
+                updateCollaborationGallerySlidePosition();
+            });
+        });
+
+        // Auto-advance with pause on hover
+        let collaborationGalleryInterval = setInterval(nextCollaborationGallerySlide, 7000);
+
+        const collaborationGalleryContainer = document.querySelector('#collaboration-gallery-slider').parentElement;
+        collaborationGalleryContainer.addEventListener('mouseenter', () => {
+            clearInterval(collaborationGalleryInterval);
+        });
+
+        collaborationGalleryContainer.addEventListener('mouseleave', () => {
+            collaborationGalleryInterval = setInterval(nextCollaborationGallerySlide, 7000);
+        });
+
+        // Touch/swipe support for mobile galleries
+        function setupTouchSwipe(slider, nextSlide, prevSlide) {
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            slider.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            slider.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                if (touchEndX < touchStartX - 50) {
+                    nextSlide();
+                }
+                if (touchEndX > touchStartX + 50) {
+                    prevSlide();
+                }
+            }
+        }
+
+        setupTouchSwipe(projectGallerySlider, nextProjectGallerySlide, prevProjectGallerySlide);
+        setupTouchSwipe(collaborationGallerySlider, nextCollaborationGallerySlide, prevCollaborationGallerySlide);
+
+        // Lightbox functionality for gallery images
+        function setupLightbox() {
+            const lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML = `
+                <span class="lightbox-close">&times;</span>
+                <img src="" alt="">
+            `;
+            document.body.appendChild(lightbox);
+            
+            const lightboxImg = lightbox.querySelector('img');
+            const lightboxClose = lightbox.querySelector('.lightbox-close');
+            
+            // Add click event to all gallery images
+            document.querySelectorAll('.gallery-card img').forEach(img => {
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Close lightbox
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+            
+            // Close on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+        }
+
+        setupLightbox();
+        
+        // Collaboration form submission
+        const collaborationForm = document.getElementById('collaboration-form');
+        const collaborationFormMessage = document.getElementById('collaboration-form-message');
+        
+        if (collaborationForm) {
+            collaborationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // In a real implementation, this would send the form data to a server
+                // For demo purposes, we'll just show a success message
+                collaborationFormMessage.textContent = 'Permohonan kolaborasi Anda telah terkirim! Tim kami akan menghubungi Anda segera.';
+                collaborationFormMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700');
+                collaborationFormMessage.classList.add('bg-green-100', 'text-green-700');
+                
+                // Reset form
+                collaborationForm.reset();
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    collaborationFormMessage.classList.add('hidden');
+                }, 5000);
+            });
+        }
+        
+        // Initialize map in footer
+        const map = L.map('map').setView([-6.9807882439533, 112.54502960571443], 15); // Koordinat Pt. Mokko Otomasi Indonesia
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        // Custom icon for the marker
+        const mokkoIcon = L.divIcon({
+            html: '<div class="bg-blue-900 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">M</div>',
+            iconSize: [40, 40],
+            className: 'custom-div-icon'
+        });
+        
+        // Add marker for Mokko location
+        L.marker([-6.9807882439533, 112.54502960571443], { icon: mokkoIcon })
+            .addTo(map)
+            .bindPopup('<b>PT. Mokko Otomasi Indonesia</b><br>Jl. Industri Raya No. 123, Jakarta Utara')
+            .openPopup();
+            
+        // WhatsApp Button Enhanced Interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const whatsappButton = document.querySelector('.whatsapp-button');
+            const chatBubble = document.getElementById('chatBubble');
+            const closeChatBubble = document.getElementById('closeChatBubble');
+            
+            // Show chat bubble after delay
+            setTimeout(() => {
+                chatBubble.classList.add('show');
+            }, 3000);
+            
+            // Close chat bubble
+            closeChatBubble.addEventListener('click', () => {
+                chatBubble.classList.remove('show');
+            });
+            
+            // Auto hide chat bubble after 10 seconds
+            setTimeout(() => {
+                chatBubble.classList.remove('show');
+            }, 13000);
+            
+            // Ripple effect on click
+            whatsappButton.addEventListener('click', function(e) {
+                // Create ripple element
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                // Remove existing ripples
+                const existingRipples = this.querySelectorAll('.ripple');
+                existingRipples.forEach(r => r.remove());
+                
+                this.appendChild(ripple);
+                
+                // Remove ripple after animation
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+            
+            // Add haptic feedback on mobile (if supported)
+            if ('vibrate' in navigator) {
+                whatsappButton.addEventListener('touchstart', () => {
+                    navigator.vibrate(50);
+                });
+            }
+            
+            // Track clicks for analytics (optional)
+            whatsappButton.addEventListener('click', () => {
+                // In a real implementation, this would send data to Google Analytics
+                console.log('WhatsApp button clicked');
+                
+                // You could also store in localStorage to track if user has clicked before
+                localStorage.setItem('whatsappClicked', 'true');
+            });
+            
+            // Show different message if user has clicked before
+            const hasClickedBefore = localStorage.getItem('whatsappClicked') === 'true';
+            if (hasClickedBefore) {
+                const chatMessage = chatBubble.querySelector('p');
+                chatMessage.textContent = 'Ingin Pesanan Khusus? Kami siap membantu!';
+            }
+            
+            // Add parallax effect on scroll
+            let lastScrollY = window.scrollY;
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                const deltaY = currentScrollY - lastScrollY;
+                
+                // Move button slightly based on scroll direction
+                const container = document.querySelector('.whatsapp-container');
+                const currentBottom = parseInt(getComputedStyle(container).bottom);
+                
+                if (deltaY > 0 && currentBottom < 120) {
+                    // Scrolling down
+                    container.style.bottom = Math.min(currentBottom + 2, 120) + 'px';
+                } else if (deltaY < 0 && currentBottom > 32) {
+                    // Scrolling up
+                    container.style.bottom = Math.max(currentBottom - 2, 32) + 'px';
+                }
+                
+                lastScrollY = currentScrollY;
+            });
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && chatBubble.classList.contains('show')) {
+                    chatBubble.classList.remove('show');
+                }
+            });
+            
+            // Add sound effect (optional)
+            const clickSound = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBTGH0fPTgjMGHm7A7+OZURE');
+            
+            whatsappButton.addEventListener('click', () => {
+                clickSound.play().catch(e => console.log('Audio play failed:', e));
+            });
+        });
+        
+        // Cookie Management
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsent = document.getElementById('cookieConsent');
+            const cookieSettingsModal = document.getElementById('cookieSettingsModal');
+            const acceptCookiesBtn = document.getElementById('acceptCookies');
+            const rejectCookiesBtn = document.getElementById('rejectCookies');
+            const cookieSettingsBtn = document.getElementById('cookieSettings');
+            const saveCookieSettingsBtn = document.getElementById('saveCookieSettings');
+            const closeCookieSettingsBtn = document.getElementById('closeCookieSettings');
+            
+            // Check if user has already made a choice
+            const cookieChoice = localStorage.getItem('cookieChoice');
+            
+            if (!cookieChoice) {
+                // Show cookie consent banner after a short delay
+                setTimeout(() => {
+                    cookieConsent.classList.add('show');
+                }, 2000);
+            }
+            
+            // Accept all cookies
+            acceptCookiesBtn.addEventListener('click', function() {
+                localStorage.setItem('cookieChoice', 'all');
+                localStorage.setItem('analyticsCookies', 'true');
+                localStorage.setItem('marketingCookies', 'true');
+                cookieConsent.classList.remove('show');
+                enableCookies();
+            });
+            
+            // Reject non-essential cookies
+            rejectCookiesBtn.addEventListener('click', function() {
+                localStorage.setItem('cookieChoice', 'essential');
+                localStorage.setItem('analyticsCookies', 'false');
+                localStorage.setItem('marketingCookies', 'false');
+                cookieConsent.classList.remove('show');
+                disableNonEssentialCookies();
+            });
+            
+            // Open cookie settings
+            cookieSettingsBtn.addEventListener('click', function() {
+                cookieSettingsModal.classList.add('show');
+                
+                // Load saved preferences
+                const analyticsCookies = localStorage.getItem('analyticsCookies') === 'true';
+                const marketingCookies = localStorage.getItem('marketingCookies') === 'true';
+                
+                document.getElementById('analyticsCookies').checked = analyticsCookies;
+                document.getElementById('marketingCookies').checked = marketingCookies;
+            });
+            
+            // Save cookie settings
+            saveCookieSettingsBtn.addEventListener('click', function() {
+                const analyticsCookies = document.getElementById('analyticsCookies').checked;
+                const marketingCookies = document.getElementById('marketingCookies').checked;
+                
+                localStorage.setItem('cookieChoice', 'custom');
+                localStorage.setItem('analyticsCookies', analyticsCookies.toString());
+                localStorage.setItem('marketingCookies', marketingCookies.toString());
+                
+                cookieSettingsModal.classList.remove('show');
+                cookieConsent.classList.remove('show');
+                
+                applyCookieSettings();
+            });
+            
+            // Close cookie settings
+            closeCookieSettingsBtn.addEventListener('click', function() {
+                cookieSettingsModal.classList.remove('show');
+            });
+            
+            // Close modal when clicking outside
+            cookieSettingsModal.addEventListener('click', function(e) {
+                if (e.target === cookieSettingsModal) {
+                    cookieSettingsModal.classList.remove('show');
+                }
+            });
+            
+            // Functions to handle cookies
+            function enableCookies() {
+                // Enable Google Analytics if needed
+                // Enable other third-party cookies
+                console.log('All cookies enabled');
+            }
+            
+            function disableNonEssentialCookies() {
+                // Disable Google Analytics
+                // Disable other non-essential cookies
+                console.log('Non-essential cookies disabled');
+            }
+            
+            function applyCookieSettings() {
+                const analyticsCookies = localStorage.getItem('analyticsCookies') === 'true';
+                const marketingCookies = localStorage.getItem('marketingCookies') === 'true';
+                
+                if (analyticsCookies) {
+                    // Enable analytics cookies
+                    console.log('Analytics cookies enabled');
+                } else {
+                    // Disable analytics cookies
+                    console.log('Analytics cookies disabled');
+                }
+                
+                if (marketingCookies) {
+                    // Enable marketing cookies
+                    console.log('Marketing cookies enabled');
+                } else {
+                    // Disable marketing cookies
+                    console.log('Marketing cookies disabled');
+                }
+            }
+            
+            // Apply saved settings on page load
+            if (cookieChoice) {
+                applyCookieSettings();
+            }
+        });
+
+        // Additional script to handle YouTube iframe cookies
+        function handleYouTubeCookies() {
+            const youtubeIframes = document.querySelectorAll('iframe[src*="youtube.com"]');
+            
+            // Check if user has accepted cookies
+            const cookieChoice = localStorage.getItem('cookieChoice');
+            
+            if (cookieChoice === 'essential' || cookieChoice === 'custom' && localStorage.getItem('marketingCookies') === 'false') {
+                // Replace YouTube iframes with a placeholder
+                youtubeIframes.forEach(iframe => {
+                    const placeholder = document.createElement('div');
+                    placeholder.className = 'relative w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center';
+                    placeholder.innerHTML = `
+                        <div class="text-center">
+                            <i class="fab fa-youtube text-6xl text-red-600 mb-4"></i>
+                            <p class="text-gray-700 mb-4">Konten YouTube dinonaktifkan karena pengaturan cookie Anda</p>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition enable-youtube">
+                                Aktifkan YouTube
+                            </button>
+                        </div>
+                    `;
+                    
+                    iframe.parentNode.replaceChild(placeholder, iframe);
+                    
+                    // Add click handler to enable YouTube
+                    placeholder.querySelector('.enable-youtube').addEventListener('click', function() {
+                        placeholder.parentNode.replaceChild(iframe, placeholder);
+                        localStorage.setItem('marketingCookies', 'true');
+                    });
+                });
+            }
+        }
+
+        // Call this function when DOM is loaded
+        document.addEventListener('DOMContentLoaded', handleYouTubeCookies);
+
+        // Adjust WhatsApp button position to match scroll up button
+        document.addEventListener('DOMContentLoaded', function() {
+            const whatsappContainer = document.querySelector('.whatsapp-container');
+            const backToTopButton = document.getElementById('backToTop');
+            
+            // Function to update WhatsApp button position
+            function updateWhatsAppPosition() {
+                const backToTopRect = backToTopButton.getBoundingClientRect();
+                const bottomPosition = window.innerHeight - backToTopRect.top - backToTopRect.height - 0; // 20px spacing
+                
+                whatsappContainer.style.bottom = `${bottomPosition}px`;
+            }
+            
+            // Update position on scroll
+            window.addEventListener('scroll', updateWhatsAppPosition);
+            
+            // Update position on resize
+            window.addEventListener('resize', updateWhatsAppPosition);
+            
+            // Initial position update
+            updateWhatsAppPosition();
+            
+            // Adjust chat bubble position relative to WhatsApp button
+            const chatBubble = document.getElementById('chatBubble');
+            function updateChatBubblePosition() {
+                const whatsappRect = whatsappContainer.getBoundingClientRect();
+                chatBubble.style.bottom = `${whatsappRect.height + 50}px`; // 20px spacing
+                chatBubble.style.left = `${whatsappRect.left}px`;
+            }
+            
+            // Update chat bubble position when WhatsApp button moves
+            window.addEventListener('scroll', updateChatBubblePosition);
+            window.addEventListener('resize', updateChatBubblePosition);
+            
+            // Initial chat bubble position update
+            updateChatBubblePosition();
+        });
+
+        // Add touch event support for mobile devices
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fix for iOS Safari
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            
+            if (isIOS) {
+                document.querySelectorAll('.nav-link, .mobile-menu-toggle, .mobile-nav-link, .dropdown-content a, .sub-dropdown-content a').forEach(element => {
+                    element.addEventListener('touchstart', function() {
+                        // Add touch feedback
+                        this.style.backgroundColor = 'rgba(59, 130, 246, 0.1)';
+                    });
+                    
+                    element.addEventListener('touchend', function() {
+                        // Remove touch feedback
+                        setTimeout(() => {
+                            this.style.backgroundColor = '';
+                        }, 300);
+                    });
+                });
+            }
+            
+            // Fix for Android
+            const isAndroid = /Android/.test(navigator.userAgent);
+            
+            if (isAndroid) {
+                document.querySelectorAll('.nav-link, .mobile-menu-toggle, .mobile-nav-link, .dropdown-content a, .sub-dropdown-content a').forEach(element => {
+                    element.addEventListener('touchstart', function() {
+                        // Add touch feedback
+                        this.style.backgroundColor = 'rgba(59, 130, 246, 0.1)';
+                    });
+                    
+                    element.addEventListener('touchend', function() {
+                        // Remove touch feedback
+                        setTimeout(() => {
+                            this.style.backgroundColor = '';
+                        }, 300);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

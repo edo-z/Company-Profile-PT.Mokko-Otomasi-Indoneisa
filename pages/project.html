@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portofolio proyek otomasi industri PT. Mokko Otomasi Indonesia. Lihat implementasi solusi PLC, SCADA, conveyor, dan IoT untuk berbagai sektor industri.">
+    <meta name="keywords" content="proyek otomasi, portofolio, PLC, SCADA, conveyor, IoT, industrial automation, Mokko, Indonesia">
+    <meta name="author" content="PT. Mokko Otomasi Indonesia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mokko.co.id/projects.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portofolio Proyek | PT. Mokko Otomasi Indonesia">
+    <meta property="og:description" content="Lihat portofolio lengkap implementasi solusi otomasi industri untuk berbagai sektor bisnis di Indonesia.">
+    <meta property="og:image" content="https://www.mokko.co.id/images/og-image-projects.jpg">
+    <meta property="og:url" content="https://www.mokko.co.id/projects.html">
+    <meta property="og:site_name" content="PT. Mokko Otomasi Indonesia">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portofolio Proyek | PT. Mokko Otomasi Indonesia">
+    <meta name="twitter:description" content="Lihat portofolio lengkap implementasi solusi otomasi industri untuk berbagai sektor bisnis di Indonesia.">
+    <meta name="twitter:image" content="https://www.mokko.co.id/images/og-image-projects.jpg">
+    <meta name="twitter:site" content="@mokko_indonesia">
+    
+    <!-- Structured Data (JSON-LD) - Collection Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Portofolio Proyek",
+        "description": "Portofolio lengkap implementasi solusi otomasi industri PT. Mokko Otomasi Indonesia",
+        "url": "https://www.mokko.co.id/projects.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Sistem Otomasi Lini Produksi Makanan",
+                    "description": "Implementasi sistem otomasi lengkap untuk pabrik makanan",
+                    "url": "https://www.mokko.co.id/projects.html#project-1"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Sistem Kemasan Otomatis",
+                    "description": "Solusi kemasan otomatis untuk industri farmasi",
+                    "url": "https://www.mokko.co.id/projects.html#project-2"
+                }
+            ]
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "PT. Mokko Otomasi Indonesia",
+            "url": "https://www.mokko.co.id"
+        }
+    }
+    </script>
+    
+    <title>Portofolio Proyek | PT. Mokko Otomasi Indonesia</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!--Icon Website-->
+    <link rel="icon" href="https://www.mokko.co.id/images/fevicon/icon.png" type="image/gif">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    
+    <style>
+        /* Sama seperti halaman utama */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --tufts-blue: #428FDE;
+            --cocoa-brown: #D06E2D;
+            
+            --primary-color: var(--tufts-blue);
+            --secondary-color: var(--cocoa-brown);
+            --accent-color: var(--tufts-blue);
+            --light-color: var(--white);
+            --dark-color: var(--black);
+            --gradient-1: linear-gradient(135deg, var(--tufts-blue), #2272c2);
+            --gradient-2: linear-gradient(135deg, var(--tufts-blue), #66a5e4);
+            --text-primary: #1F2937;
+            --text-secondary: #374151;
+            --text-muted: #6B7280;
+            --border-color: #E5E7EB;
+            --bg-light: #F9FAFB;
+            --bg-card: var(--white);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--dark-gray);
+            background-color: var(--off-white);
+            line-height: 1.6;
+        }
+
+        /* Skip Navigation for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2272c2;
+        }
+
+        /* Professional CTA Button */
+        .cta-button {
+            background: var(--gradient-1);
+            color: var(--white);
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: var(--gradient-2);
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        /* Secondary button */
+        .secondary-button {
+            background: transparent;
+            color: var(--white);
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            border: 2px solid var(--white);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .secondary-button:hover {
+            background: var(--white);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Navbar Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-link:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .mobile-menu.active {
+            max-height: 600px;
+        }
+
+        .mobile-nav-link {
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            color: var(--text-secondary);
+        }
+
+        .mobile-nav-link:hover {
+            background: var(--bg-light);
+            color: var(--primary-color);
+        }
+
+        /* Loading animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-circle {
+            width: 60px;
+            height: 60px;
+            border: 5px solid var(--border-color);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-1);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+            z-index: 99;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            background: var(--bg-light);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .breadcrumb-item {
+            color: var(--text-muted);
+            transition: color 0.2s ease;
+        }
+
+        .breadcrumb-item:hover {
+            color: var(--primary-color);
+        }
+
+        .breadcrumb-separator {
+            color: var(--text-muted);
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb-current {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* Bottom Navigation for Mobile */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-top: 1px solid var(--border-color);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 50;
+            display: none;
+        }
+
+        .bottom-nav-inner {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .bottom-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            min-width: 60px;
+        }
+
+        .bottom-nav-item:hover,
+        .bottom-nav-item.active {
+            color: var(--primary-color);
+        }
+
+        .bottom-nav-icon {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .bottom-nav-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Projects Page Specific Styles */
+        .project-hero {
+            background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(66, 143, 222, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(66, 143, 222, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.5;
+        }
+
+        .project-filter-btn {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .project-filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .project-filter-btn:not(.active):hover {
+            background: rgba(66, 143, 222, 0.1);
+            color: var(--primary-color);
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .project-image {
+            position: relative;
+            overflow: hidden;
+            height: 240px;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-category {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.375rem 0.875rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .project-client,
+        .project-date {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tag {
+            background: var(--bg-light);
+            color: var(--text-muted);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .project-tag:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .project-detail-btn {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+            margin-top: auto;
+        }
+
+        .project-detail-btn:hover {
+            color: #2272c2;
+            transform: translateX(4px);
+        }
+
+        .project-detail-btn i {
+            margin-left: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .project-detail-btn:hover i {
+            transform: translateX(2px);
+        }
+
+        /* Load More Button */
+        .load-more-btn {
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .load-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .load-more-btn.loading {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        /* Stats Section */
+        .stats-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .stats-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stats-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .project-hero {
+                padding: 4rem 0 3rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .bottom-nav {
+                display: block;
+            }
+            
+            body {
+                padding-bottom: 60px;
+            }
+        }
+
+        /* Focus styles for accessibility */
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --text-primary: #000000;
+                --text-secondary: #333333;
+                --text-muted: #666666;
+                --border-color: #000000;
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header Section -->
+    <header class="fixed top-0 w-full z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between h-16" role="navigation" aria-label="Main navigation">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3" aria-label="Mokko Home">
+                        <div class="bg-gradient-to-r from-tufts-blue to-blue-700 text-white font-bold text-xl px-4 py-2 rounded-lg">
+                            <img src="https://mokkoproject.biz.id/mokko/assets/img/mokkologo.png" alt="logo" class="h-12">
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link" aria-label="Beranda">Home</a>
+                    <a href="product.html" class="nav-link" aria-label="Produk">Product</a>
+                    <a href="service.html" class="nav-link" aria-label="Layanan">Services</a>
+                    <a href="contact.html" class="nav-link" aria-label="Layanan">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/628999910551?text=Halo%2C%20saya%20tertarik%20dengan%20solusi%20otomasi%20dari%20Mokko" 
+                       target="_blank"
+                       class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 flex items-center"
+                       aria-label="Konsultasi Gratis via WhatsApp">
+                        <i class="fab fa-whatsapp mr-2" aria-hidden="true"></i> Konsultasi Gratis
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors" 
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="space-y-1" aria-label="Mobile navigation">
+                    <a href="../index.html" class="mobile-nav-link block">
+                        <i class="fas fa-home mr-3" aria-hidden="true"></i> Home
+                    </a>
+                    <a href="product.html" class="mobile-nav-link block">
+                        <i class="fas fa-box mr-3" aria-hidden="true"></i> Product
+                    </a>
+                    <a href="service.html" class="mobile-nav-link block">
+                        <i class="fas fa-cogs mr-3" aria-hidden="true"></i> Services
+                    </a>
+                    <a href="contact.html" class="mobile-nav-link block">
+                        <i class="fas fa-cogs mr-3" aria-hidden="true"></i> Contact
+                    </a>
+                    
+                    <!-- Mobile CTA -->
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="https://wa.me/628999910551?text=Halo%2C%20saya%20tertarik%20dengan%20solusi%20otomasi%20dari%20Mokko" 
+                           target="_blank"
+                           class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center"
+                           aria-label="Konsultasi Gratis via WhatsApp">
+                            <i class="fab fa-whatsapp mr-2" aria-hidden="true"></i> Konsultasi Gratis
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container mx-auto px-4">
+            <ol class="breadcrumb-nav">
+                <li>
+                    <a href="index.html" class="breadcrumb-item">Beranda</a>
+                </li>
+                <li class="breadcrumb-separator" aria-hidden="true">
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </li>
+                <li class="breadcrumb-current" aria-current="page">Portofolio Proyek</li>
+            </ol>
+        </div>
+    </nav>
+    
+    <!-- Loading Animation -->
+    <div class="loader" id="loader" role="alert" aria-busy="true">
+        <div class="loader-circle" aria-hidden="true"></div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="project-hero py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-5xl font-light text-gray-900 mb-6">
+                        Portofolio <span class="font-semibold text-blue-600">Proyek</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Eksplorasi implementasi solusi otomasi industri yang telah kami kerjakan untuk berbagai sektor bisnis di Indonesia
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <!-- Filter Section -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12" data-aos="fade-up">
+                    <button class="project-filter-btn active px-6 py-2 rounded-full text-sm font-medium" data-filter="all">
+                        Semua Proyek
+                    </button>
+                    <button class="project-filter-btn px-6 py-2 rounded-full text-sm font-medium" data-filter="manufaktur">
+                        Manufaktur
+                    </button>
+                    <button class="project-filter-btn px-6 py-2 rounded-full text-sm font-medium" data-filter="PLC & SCADA">
+                        PLC & SCADA
+                    </button>
+                    <button class="project-filter-btn px-6 py-2 rounded-full text-sm font-medium" data-filter="Conveyor">
+                        Conveyor
+                    </button>
+                    <button class="project-filter-btn px-6 py-2 rounded-full text-sm font-medium" data-filter="iot">
+                        IoT
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 project-grid" id="projectsGrid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="manufaktur" id="project-1">
+                        <div class="project-image">
+                            <img src="/mokko/assets/img/PRJCT_1.jpg" 
+                                 alt="Industrial automation system in food manufacturing facility" 
+                                 loading="lazy" 
+                                 width="400" 
+                                 height="240">
+                            <span class="project-category">Manufaktur</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistem Otomasi Lini Produksi Makanan</h3>
+                            <p class="project-description">
+                                Implementasi sistem otomasi lengkap untuk pabrik makanan dengan integrasi PLC, SCADA, dan conveyor system. Peningkatan efisiensi produksi hingga 30% dan pengurangan error rate hingga 95%.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">PLC</span>
+                                <span class="project-tag">SCADA</span>
+                                <span class="project-tag">Conveyor</span>
+                                <span class="project-tag">HMI</span>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-client">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    PT. FoodTech Indonesia
+                                </div>
+                                <div class="project-date">
+                                    <i class="far fa-calendar" aria-hidden="true"></i>
+                                    Jan 2024
+                                </div>
+                            </div>
+                            <a href="#" class="project-detail-btn">
+                                Lihat Detail <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="PLC & SCADA" id="project-2">
+                        <div class="project-image">
+                            <img src="/mokko/assets/img/PRJCT_2.jpg" 
+                                 alt="Automated packaging system in pharmaceutical facility" 
+                                 loading="lazy" 
+                                 width="400" 
+                                 height="240">
+                            <span class="project-category">PLC & SCADA</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistem Kemasan Otomatis Farmasi</h3>
+                            <p class="project-description">
+                                Solusi kemasan otomatis untuk industri farmasi dengan sistem kontrol ketat GMP. Termasuk robotic arm, vision system, dan traceability system untuk keamanan produk.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Robot</span>
+                                <span class="project-tag">Vision System</span>
+                                <span class="project-tag">GMP</span>
+                                <span class="project-tag">Traceability</span>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-client">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    PT. PharmaSejahtera
+                                </div>
+                                <div class="project-date">
+                                    <i class="far fa-calendar" aria-hidden="true"></i>
+                                    Mar 2024
+                                </div>
+                            </div>
+                            <a href="#" class="project-detail-btn">
+                                Lihat Detail <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="300" data-category="Conveyor" id="project-3">
+                        <div class="project-image">
+                            <img src="/mokko/assets/img/PRJCT_3.jpg" 
+                                 alt="Robot palletizing system in automotive parts manufacturing" 
+                                 loading="lazy" 
+                                 width="400" 
+                                 height="240">
+                            <span class="project-category">Conveyor</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistem Palletizing Robot Otomotif</h3>
+                            <p class="project-description">
+                                Implementasi 6-axis robot untuk palletizing komponen otomotif dengan kapasitas 120 unit/jam. Dilengkapi dengan safety system dan IoT monitoring untuk maintenance prediktif.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">6-Axis Robot</span>
+                                <span class="project-tag">Palletizing</span>
+                                <span class="project-tag">IoT</span>
+                                <span class="project-tag">Safety System</span>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-client">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    PT. AutoParts Indonesia
+                                </div>
+                                <div class="project-date">
+                                    <i class="far fa-calendar" aria-hidden="true"></i>
+                                    Mei 2024
+                                </div>
+                            </div>
+                            <a href="#" class="project-detail-btn">
+                                Lihat Detail <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="400" data-category="manufaktur" id="project-4">
+                        <div class="project-image">
+                            <img src="/mokko/assets/img/PRJCT_4.jpg" 
+                                 alt="Modular conveyor system in manufacturing facility" 
+                                 loading="lazy" 
+                                 width="400" 
+                                 height="240">
+                            <span class="project-category">Manufaktur</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistem Conveyor Modular</h3>
+                            <p class="project-description">
+                                Desain dan instalasi conveyor system modular untuk manufacturing plant dengan kemampuan rekonfigurasi cepat. Menggunakan belt conveyor, roller conveyor, dan transfer unit.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Modular</span>
+                                <span class="project-tag">Belt Conveyor</span>
+                                <span class="project-tag">Roller Conveyor</span>
+                                <span class="project-tag">Transfer Unit</span>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-client">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    PT. Manufacturing Solutions
+                                </div>
+                                <div class="project-date">
+                                    <i class="far fa-calendar" aria-hidden="true"></i>
+                                    Jul 2024
+                                </div>
+                            </div>
+                            <a href="#" class="project-detail-btn">
+                                Lihat Detail <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="600" data-category="iot" id="project-6">
+                        <div class="project-image">
+                            <img src="/mokko/assets/img/PRJCT_5.jpg" 
+                                 alt="IoT sensors and monitoring dashboard in industrial facility" 
+                                 loading="lazy" 
+                                 width="400" 
+                                 height="240">
+                            <span class="project-category">IoT</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Integrasi IoT Industri 4.0</h3>
+                            <p class="project-description">
+                                Implementasi 200+ sensor IoT untuk monitoring real-time dengan dashboard analytics. Termasuk predictive maintenance dan energy optimization system.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">IoT Sensors</span>
+                                <span class="project-tag">Real-time Monitoring</span>
+                                <span class="project-tag">Predictive Maintenance</span>
+                                <span class="project-tag">Energy Optimization</span>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-client">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    PT. TechSolutions
+                                </div>
+                                <div class="project-date">
+                                    <i class="far fa-calendar" aria-hidden="true"></i>
+                                    Nov 2024
+                                </div>
+                            </div>
+                            <a href="#" class="project-detail-btn">
+                                Lihat Detail <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="800" data-category="PLC & SCADA" id="project-8">
+                        <div class="project-image">
+                            <img src="/mokko/assets/img/PRJCT_9.jpg" 
+                                 alt="Clean room automation system for pharmaceutical production" 
+                                 loading="lazy" 
+                                 width="400" 
+                                 height="240">
+                            <span class="project-category">PLC & SCADA</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Clean Room Automation System</h3>
+                            <p class="project-description">
+                                Sistem otomasi untuk clean room farmasi dengan kontrol environment parameter (temperature, humidity, particle count). Fully compliant dengan ISO 14644.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Clean Room</span>
+                                <span class="project-tag">Environmental Control</span>
+                                <span class="project-tag">ISO 14644</span>
+                                <span class="project-tag">SCADA</span>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-client">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    PT. Medica Farma
+                                </div>
+                                <div class="project-date">
+                                    <i class="far fa-calendar" aria-hidden="true"></i>
+                                    Feb 2024
+                                </div>
+                            </div>
+                            <a href="#" class="project-detail-btn">
+                                Lihat Detail <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 9 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="900" data-category="Conveyor" id="project-9">
+                        <div class="project-image">
+                            <img src="/mokko/assets/img/PRJCT_10.jpg" 
+                                 alt="Automated welding line for automotive manufacturing" 
+                                 loading="lazy" 
+                                 width="400" 
+                                 height="240">
+                            <span class="project-category">Conveyor</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Automated Welding Line</h3>
+                            <p class="project-description">
+                                Lini welding otomatis dengan 12 welding robot untuk produksi chassis kendaraan. Cycle time 45 seconds per unit dengan quality control integrated.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Welding Robot</span>
+                                <span class="project-tag">Production Line</span>
+                                <span class="project-tag">Quality Control</span>
+                                <span class="project-tag">Cycle Time</span>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-client">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    PT. Otomotif Nusantara
+                                </div>
+                                <div class="project-date">
+                                    <i class="far fa-calendar" aria-hidden="true"></i>
+                                    Apr 2024
+                                </div>
+                            </div>
+                            <a href="#" class="project-detail-btn">
+                                Lihat Detail <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="1000">
+                    <button id="loadMoreBtn" class="load-more-btn">
+                        <span class="btn-text">Muat Lebih Banyak Proyek</span>
+                        <span class="loading-spinner" style="display: none;"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 md:py-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Tertarik dengan Solusi Otomasi Kami?</h2>
+                    <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
+                        Diskusikan kebutuhan otomasi industri Anda dengan tim ahli kami dan dapatkan solusi yang tepat untuk bisnis Anda.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="https://wa.me/628999910551?text=Halo%2C%20saya%20tertarik%20dengan%20solusi%20otomasi%20dari%20Mokko" 
+                           target="_blank"
+                           class="cta-button group text-lg">
+                            <span class="relative z-10">
+                                <i class="fab fa-whatsapp mr-3 text-xl" aria-hidden="true"></i> 
+                                Konsultasi via WhatsApp
+                            </span>
+                        </a>
+                        <a href="tel:03199113264" class="secondary-button text-lg">
+                            <i class="fas fa-phone mr-3 text-xl" aria-hidden="true"></i> 
+                            Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-gradient-to-r from-tufts-blue to-blue-700 text-white font-bold text-xl px-4 py-2 rounded-lg mr-3">
+                            PT. Mokko Otomasi Indonesia
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">PT. Mokko Otomasi Indonesia adalah mitra terpercaya dalam solusi otomasi industri, mengintegrasikan teknologi terdepan untuk meningkatkan efisiensi dan produktivitas bisnis Anda.</p>
+                    
+                    <!-- Social Media -->
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/mokkoindonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tufts-blue transition duration-300 group" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/mokko-otomasi-indonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tufts-blue transition duration-300 group" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mokko_indonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300 group" aria-label="Instagram">
+                            <i class="fab fa-instagram text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/mokkoindonesia" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300 group" aria-label="YouTube">
+                            <i class="fab fa-youtube text-white group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-tufts-blue">Tautan Cepat</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Beranda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Tentang Kami
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#partners" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Mitra
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#collaboration" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Kolaborasi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Layanan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Proyek
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-tufts-blue">Layanan Kami</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Sistem Kontrol & Automation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                PLC & SCADA System
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Conveyor System
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Industrial Machine Maker
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                IoT Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 flex items-center group">
+                                <i class="fas fa-chevron-right mr-2 text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                                Dukungan Teknis 24/7
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-tufts-blue">Hubungi Kami</h3>
+                    
+                    <!-- Office Hours -->
+                    <div class="bg-gray-800 rounded-lg p-4 mb-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-clock text-tufts-blue mr-3" aria-hidden="true"></i>
+                            <div>
+                                <p class="font-semibold">Jam Operasional</p>
+                                <p class="text-sm text-gray-400">Senin - Jumat: 08:00 - 17:00 WIB</p>
+                                <p class="text-sm text-gray-400">Sabtu: 08:00 - 12:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Details -->
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-tufts-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Alamat Kantor</p>
+                                <p class="text-gray-400 text-sm">Jl. Raya Deandles Golokan Sidayu</p>
+                                <p class="text-gray-400 text-sm">Gresik, Jawa Timur 61153</p>
+                                <a href="https://maps.google.com/?q=-6.9807882439533,112.54502960571443" target="_blank" class="text-tufts-blue text-sm hover:text-blue-300 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-1" aria-hidden="true"></i> Lihat di Google Maps
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-tufts-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Telepon</p>
+                                <a href="tel:03199113264" class="text-gray-400 hover:text-white transition-colors">031-99113264</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-tufts-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Email</p>
+                                <a href="mailto:sales@mokko.co.id" class="text-gray-400 hover:text-white transition-colors">sales@mokko.co.id</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-gray-500 text-sm">&copy; 2025 PT. Mokko Otomasi Indonesia. Hak Cipta Dilindungi.</p>
+                        <p class="text-gray-600 text-xs mt-1">Solusi Otomasi Industri Terpercaya sejak 2010</p>
+                    </div>
+                    
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">Kebijakan Privasi</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation for Mobile -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <div class="bottom-nav-inner">
+            <a href="index.html" class="bottom-nav-item" aria-label="Beranda">
+                <i class="fas fa-home bottom-nav-icon" aria-hidden="true"></i>
+                <span class="bottom-nav-label">Beranda</span>
+            </a>
+            <a href="#services" class="bottom-nav-item" aria-label="Layanan">
+                <i class="fas fa-cogs bottom-nav-icon" aria-hidden="true"></i>
+                <span class="bottom-nav-label">Layanan</span>
+            </a>
+            <a href="projects.html" class="bottom-nav-item active" aria-label="Proyek">
+                <i class="fas fa-folder-open bottom-nav-icon" aria-hidden="true"></i>
+                <span class="bottom-nav-label">Proyek</span>
+            </a>
+            <a href="tel:03199113264" class="bottom-nav-item" aria-label="Hubungi Kami">
+                <i class="fas fa-phone bottom-nav-icon" aria-hidden="true"></i>
+                <span class="bottom-nav-label">Hubungi</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+    
+    // Hide loader when page is loaded
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('loader').classList.add('hidden');
+        }, 500);
+    });
+    
+    // Back to top button
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+    
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    // Smooth scrolling untuk navigasi utama
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        // Toggle mobile menu
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            
+            // Change icon
+            const icon = this.querySelector('i');
+            if (mobileMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                this.setAttribute('aria-expanded', 'true');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                this.setAttribute('aria-expanded', 'false');
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
+    // Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 10;
+
+    counters.forEach(counter => {
+        const animate = () => {
+            const value = +counter.getAttribute('data-target');
+            const data = +counter.innerText;
+            const time = value / speed;
+            
+            if (data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+            } else {
+                counter.innerText = value;
+            }
+        }
+        
+        // Start animation when element is in viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animate();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(counter);
+    });
+
+    // Projects Filter Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.project-filter-btn');
+        const projectItems = document.querySelectorAll('.project-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter projects with animation
+                projectItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.style.opacity = '0';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    });
+
+    // Load More Projects Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const projectsGrid = document.getElementById('projectsGrid');
+        let currentPage = 1;
+        let isLoading = false;
+        
+        // Sample additional projects (in real implementation, this would come from API)
+        const additionalProjects = [
+            {
+                title: "Smart Factory Implementation",
+                description: "Transformasi pabrik konvensional menjadi smart factory dengan integrasi IoT, AI, dan big data analytics.",
+                category: "manufaktur",
+                client: "PT. Smart Manufacturing",
+                date: "Jan 2025",
+                tags: ["IoT", "AI", "Big Data", "Smart Factory"],
+                image: "/mokko/assets/img/PRJCT_11.jpg"
+            },
+            {
+                title: "Automated Quality Control System",
+                description: "Sistem quality control otomatis dengan machine vision untuk deteksi defect produk secara real-time.",
+                category: "Conveyor",
+                client: "PT. Quality Assurance",
+                date: "Feb 2025",
+                tags: ["Machine Vision", "AI", "Quality Control", "Real-time"],
+                image: "/mokko/assets/img/PRJCT_12.jpg"
+            },
+            {
+                title: "Energy Management System",
+                description: "Sistem monitoring dan manajemen energi untuk optimasi konsumsi energi di fasilitas industri.",
+                category: "iot",
+                client: "PT. Energy Solutions",
+                date: "Mar 2025",
+                tags: ["Energy Management", "IoT", "Monitoring", "Optimization"],
+                image: "/mokko/assets/img/PRJCT_13.jpg"
+            }
+        ];
+        
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', function() {
+                if (isLoading) return;
+                
+                isLoading = true;
+                loadMoreBtn.classList.add('loading');
+                loadMoreBtn.querySelector('.btn-text').style.display = 'none';
+                loadMoreBtn.querySelector('.loading-spinner').style.display = 'inline-block';
+                
+                // Simulate API call delay
+                setTimeout(() => {
+                    // Add new projects
+                    additionalProjects.forEach((project, index) => {
+                        const projectElement = createProjectElement(project, currentPage * 9 + index);
+                        projectsGrid.appendChild(projectElement);
+                        
+                        // Trigger AOS animation for new elements
+                        AOS.refresh();
+                    });
+                    
+                    currentPage++;
+                    
+                    // Reset button state
+                    isLoading = false;
+                    loadMoreBtn.classList.remove('loading');
+                    loadMoreBtn.querySelector('.btn-text').style.display = 'inline';
+                    loadMoreBtn.querySelector('.loading-spinner').style.display = 'none';
+                    
+                    // Hide button if no more projects (in real implementation, check from API response)
+                    if (currentPage >= 1) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                }, 1000);
+            });
+        }
+        
+        // Function to create project element
+        function createProjectElement(project, index) {
+            const categoryColors = {
+                'manufaktur': 'bg-blue-600',
+                'PLC & SCADA': 'bg-green-600',
+                'Conveyor': 'bg-purple-600',
+                'iot': 'bg-teal-600',
+            };
+            
+            const projectDiv = document.createElement('article');
+            projectDiv.className = 'project-card';
+            projectDiv.setAttribute('data-category', project.category);
+            projectDiv.setAttribute('id', `project-${index + 10}`);
+            projectDiv.setAttribute('data-aos', 'fade-up');
+            projectDiv.setAttribute('data-aos-delay', (index % 6) * 100);
+            
+            projectDiv.innerHTML = `
+                <div class="project-image">
+                    <img src="${project.image}" 
+                         alt="${project.title}" 
+                         loading="lazy" 
+                         width="400" 
+                         height="240">
+                    <span class="project-category ${categoryColors[project.category] || 'bg-gray-600'}">${project.category.charAt(0).toUpperCase() + project.category.slice(1)}</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="project-tags">
+                        ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                            ${project.client}
+                        </div>
+                        <div class="project-date">
+                            <i class="far fa-calendar" aria-hidden="true"></i>
+                            ${project.date}
+                        </div>
+                    </div>
+                    <a href="#" class="project-detail-btn">
+                        Lihat Detail <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            `;
+            
+            return projectDiv;
+        }
+    });
+
+    // Bottom Navigation Active State
+    document.addEventListener('DOMContentLoaded', function() {
+        const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+        
+        // Set active state based on current page
+        bottomNavItems.forEach(item => {
+            const href = item.getAttribute('href');
+            if (href === 'projects.html' || window.location.pathname.includes('projects.html')) {
+                item.classList.add('active');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
