@@ -1,8 +1,4 @@
 
-
----
-
-```md
 # 🌐 Mokko Project Website
 Website resmi **PT. Mokko Otomasi Indonesia** — solusi otomasi industri terdepan dengan fokus pada **PLC, SCADA, IoT, Conveyor, Robotika, dan Integrasi Sistem**.  
 Dibangun menggunakan **HTML5, CSS3 (Tailwind CSS), dan JavaScript** dengan desain modern, animasi interaktif, serta optimasi SEO & aksesibilitas.
@@ -66,7 +62,7 @@ mokko-website/
 │   └── videos/         # Video background (opsional di hero section)
 └── README.md
 
-````
+```
 
 ---
 
@@ -86,7 +82,7 @@ Clone repo ini dan jalankan secara lokal menggunakan browser:
 ```bash
 git clone https://github.com/username/mokko-website.git
 cd mokko-website
-````
+```
 
 Buka file `index.html` langsung di browser, atau gunakan server lokal:
 
